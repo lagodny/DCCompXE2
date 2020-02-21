@@ -1,0 +1,192 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{94C1EC13-AA2D-47C6-A4ED-71216B54BCA4}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DC.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="dclDC.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="dclDCFrames.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Projects\Test OPCTCPSource\TestOPCTCPSource.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test OPCImage\TestOPCImage.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test Frames\TestFrames.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzTemp\kzTemp.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test Tag Dictionary\TestTagDictionary.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test StateLine\TestStateLine.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test ColorLabel\testColorLabel.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test Chart Touch\TestChartGuest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="E:\Projects\Monitoring\__XE2\Servers\DC\DCSrvc.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzEnergo\kzEnergo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="..\Test\Test MessureBandTool\TestMessureBandTool.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="DC">
+			<MSBuild Projects="DC.dproj"/>
+		</Target>
+		<Target Name="DC:Clean">
+			<MSBuild Projects="DC.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DC:Make">
+			<MSBuild Projects="DC.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclDC">
+			<MSBuild Projects="dclDC.dproj"/>
+		</Target>
+		<Target Name="dclDC:Clean">
+			<MSBuild Projects="dclDC.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclDC:Make">
+			<MSBuild Projects="dclDC.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="dclDCFrames">
+			<MSBuild Projects="dclDCFrames.dproj"/>
+		</Target>
+		<Target Name="dclDCFrames:Clean">
+			<MSBuild Projects="dclDCFrames.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="dclDCFrames:Make">
+			<MSBuild Projects="dclDCFrames.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestOPCTCPSource">
+			<MSBuild Projects="..\Projects\Test OPCTCPSource\TestOPCTCPSource.dproj"/>
+		</Target>
+		<Target Name="TestOPCTCPSource:Clean">
+			<MSBuild Projects="..\Projects\Test OPCTCPSource\TestOPCTCPSource.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestOPCTCPSource:Make">
+			<MSBuild Projects="..\Projects\Test OPCTCPSource\TestOPCTCPSource.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestOPCImage">
+			<MSBuild Projects="..\Test\Test OPCImage\TestOPCImage.dproj"/>
+		</Target>
+		<Target Name="TestOPCImage:Clean">
+			<MSBuild Projects="..\Test\Test OPCImage\TestOPCImage.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestOPCImage:Make">
+			<MSBuild Projects="..\Test\Test OPCImage\TestOPCImage.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestFrames">
+			<MSBuild Projects="..\Test\Test Frames\TestFrames.dproj"/>
+		</Target>
+		<Target Name="TestFrames:Clean">
+			<MSBuild Projects="..\Test\Test Frames\TestFrames.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestFrames:Make">
+			<MSBuild Projects="..\Test\Test Frames\TestFrames.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="kzTemp">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzTemp\kzTemp.dproj"/>
+		</Target>
+		<Target Name="kzTemp:Clean">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzTemp\kzTemp.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="kzTemp:Make">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzTemp\kzTemp.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestTagDictionary">
+			<MSBuild Projects="..\Test\Test Tag Dictionary\TestTagDictionary.dproj"/>
+		</Target>
+		<Target Name="TestTagDictionary:Clean">
+			<MSBuild Projects="..\Test\Test Tag Dictionary\TestTagDictionary.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestTagDictionary:Make">
+			<MSBuild Projects="..\Test\Test Tag Dictionary\TestTagDictionary.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestStateLine">
+			<MSBuild Projects="..\Test\Test StateLine\TestStateLine.dproj"/>
+		</Target>
+		<Target Name="TestStateLine:Clean">
+			<MSBuild Projects="..\Test\Test StateLine\TestStateLine.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestStateLine:Make">
+			<MSBuild Projects="..\Test\Test StateLine\TestStateLine.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="testColorLabel">
+			<MSBuild Projects="..\Test\Test ColorLabel\testColorLabel.dproj"/>
+		</Target>
+		<Target Name="testColorLabel:Clean">
+			<MSBuild Projects="..\Test\Test ColorLabel\testColorLabel.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="testColorLabel:Make">
+			<MSBuild Projects="..\Test\Test ColorLabel\testColorLabel.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestChartGuest">
+			<MSBuild Projects="..\Test\Test Chart Touch\TestChartGuest.dproj"/>
+		</Target>
+		<Target Name="TestChartGuest:Clean">
+			<MSBuild Projects="..\Test\Test Chart Touch\TestChartGuest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestChartGuest:Make">
+			<MSBuild Projects="..\Test\Test Chart Touch\TestChartGuest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="DCSrvc">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\Servers\DC\DCSrvc.dproj"/>
+		</Target>
+		<Target Name="DCSrvc:Clean">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\Servers\DC\DCSrvc.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DCSrvc:Make">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\Servers\DC\DCSrvc.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="kzEnergo">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzEnergo\kzEnergo.dproj"/>
+		</Target>
+		<Target Name="kzEnergo:Clean">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzEnergo\kzEnergo.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="kzEnergo:Make">
+			<MSBuild Projects="E:\Projects\Monitoring\__XE2\_Мнемосхемы\Danone\Kremez\kzEnergo\kzEnergo.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="TestMessureBandTool">
+			<MSBuild Projects="..\Test\Test MessureBandTool\TestMessureBandTool.dproj"/>
+		</Target>
+		<Target Name="TestMessureBandTool:Clean">
+			<MSBuild Projects="..\Test\Test MessureBandTool\TestMessureBandTool.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="TestMessureBandTool:Make">
+			<MSBuild Projects="..\Test\Test MessureBandTool\TestMessureBandTool.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="DC;dclDC;dclDCFrames;TestOPCTCPSource;TestOPCImage;TestFrames;kzTemp;TestTagDictionary;TestStateLine;testColorLabel;TestChartGuest;DCSrvc;kzEnergo;TestMessureBandTool"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="DC:Clean;dclDC:Clean;dclDCFrames:Clean;TestOPCTCPSource:Clean;TestOPCImage:Clean;TestFrames:Clean;kzTemp:Clean;TestTagDictionary:Clean;TestStateLine:Clean;testColorLabel:Clean;TestChartGuest:Clean;DCSrvc:Clean;kzEnergo:Clean;TestMessureBandTool:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="DC:Make;dclDC:Make;dclDCFrames:Make;TestOPCTCPSource:Make;TestOPCImage:Make;TestFrames:Make;kzTemp:Make;TestTagDictionary:Make;TestStateLine:Make;testColorLabel:Make;TestChartGuest:Make;DCSrvc:Make;kzEnergo:Make;TestMessureBandTool:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

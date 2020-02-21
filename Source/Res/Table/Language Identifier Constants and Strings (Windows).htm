@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="canonical" href="./Language Identifier Constants and Strings (Windows)_files/Language Identifier Constants and Strings (Windows).htm">
+        <title>Language Identifier Constants and Strings (Windows)</title>
+
+
+
+
+<meta name="DCS.dcsuri" content="/en-us/library/windows/desktop/dd318693(d=default,l=en-us,v=vs.85).aspx">
+
+<meta name="NormalizedUrl" content="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(d=default,l=en-us,v=vs.85).aspx">
+
+<meta name="VotingContextUrl" content="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(d=default,l=en-us,v=vs.85).aspx">
+
+<meta name="MN" content="61C41DD1-12:55:32 AM">
+
+<meta name="Search.ShortId" content="dd318693">
+
+<meta name="Ms.Locale" content="en-us">
+
+
+
+
+
+
+
+
+        
+    <link rel="stylesheet" type="text/css" href="./Language Identifier Constants and Strings (Windows)_files/Combined.css"><script type="text/javascript" async="" src="./Language Identifier Constants and Strings (Windows)_files/ms2.js"></script><script class="mtps-injected">try {
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "http://i.msdn.microsoft.com", 
+	"js": "http://i2.msdn.microsoft.com", 
+	"css": "http://i3.msdn.microsoft.com"
+});
+/**/
+} finally { MTPS._injectNextScript_0 && MTPS._injectNextScript_0(); }</script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/jquery-1.8.2.min.js"></script><script class="mtps-injected">try {
+//
+  var literalNormalizedUrl = '/en-us/library/windows/desktop/dd318693(d=default,l=en-us,v=vs.85).aspx';
+  var wt_nvr_ru = 'WT_NVR_RU';
+  var wt_fpcdom = '.microsoft.com';
+  var wt_domlist = 'msdn.microsoft.com';
+  var wt_pathlist = '';
+  var wt_paramlist = 'DCSext.mtps_devcenter';
+  var wt_siteid = 'MSDN';
+  var gDomain = 'm.webtrends.com';
+  var gDcsId = 'dcsmgru7m99k7mqmgrhudo0k8_8c6m';
+  var gFpc = 'WT_FPC';
+
+
+
+  if (document.cookie.indexOf(gFpc + "=") == -1) {
+    var wtidJs = document.createElement("script");
+    wtidJs.src = "//" + gDomain + "/" + gDcsId + "/wtid.js";
+    document.getElementsByTagName("head")[0].appendChild(wtidJs);
+  }
+
+
+
+  var detectedLocale = 'en-us';
+  var wtsp = '_msdn_';
+  var gTrackEvents = '0';
+/**/
+} finally { MTPS._injectNextScript_2 && MTPS._injectNextScript_2(); }</script><script class="mtps-injected">try {
+/**/
+  var omni_guid = "24b108fb-cc42-4768-8225-581eea43afcc";
+/**/
+} finally { MTPS._injectNextScript_3 && MTPS._injectNextScript_3(); }</script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/Combined.js"></script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/SearchBox.jss"></script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/Combined(1).js"></script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/jquery.tmpl.min.js"></script><script class="mtps-injected" src="./Language Identifier Constants and Strings (Windows)_files/Combined(2).js"></script><script src="./Language Identifier Constants and Strings (Windows)_files/broker.js"></script><script class="mtps-injected">try {
+$(document).ready(function() {
+        try {
+            var token = $("#globalRequestVerification input[name='__RequestVerificationToken']").clone();
+            $("#siteFeedbackForm").append(token);
+        } catch(err) {
+            
+        }
+    });
+} finally { MTPS._injectNextScript_9 && MTPS._injectNextScript_9(); }</script><link type="text/css" rel="stylesheet" href="./Language Identifier Constants and Strings (Windows)_files/PrintView.css" media="print"></head>
+    <body class="library Chrome">
+        <div id="page">
+            
+            
+  
+            
+    
+    
+    <div id="ux-header" class="Chrome ltr">
+        <div id="headerContainer">
+            <div id="logoAndSearchBox">
+                <div id="logo">
+                    <a href="http://msdn.microsoft.com/windows/desktop/" title="Windows"><img alt="Windows" src="./Language Identifier Constants and Strings (Windows)_files/Windows_logo.png"></a>       
+                </div>
+              
+        <div id="selectedTab">
+            <a href="javascript:void(0);">Dev Center - Desktop</a>    
+            <span class="arrowdown"></span>
+        </div>
+        <div id="toclevel1_menu" style="display: none; left: 157px; top: 67px;">
+            <ul>
+                    <li><a href="http://msdn.microsoft.com/windows/" title="Dev Center Home">Dev Center Home</a></li>
+                    <li><a href="http://msdn.microsoft.com/windows/apps/" title="Windows Store apps">Windows Store apps</a></li>
+                    <li><a href="http://msdn.microsoft.com/ie/" title="Internet Explorer">Internet Explorer</a></li>
+                    <li><a href="http://msdn.microsoft.com/windows/hardware/" title="Hardware">Hardware</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </div> 
+
+                
+                  
+
+    
+
+<div class="SearchBox">
+              <form id="HeaderSearchForm" name="HeaderSearchForm" method="get" action="http://social.technet.microsoft.com/Search" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this, this.title);">
+            <input id="HeaderSearchTextBox" name="query" type="text" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(this, this.title, &#39;TextBoxSearch&#39;)" onblur="Epx.Controls.SearchBox.watermarkBlur(this, this.title, &#39;TextBoxSearch&#39;)" autocomplete="off">
+            <input id="RefinementId" name="refinement" type="hidden" value="181">
+            <button id="HeaderSearchButton" value="" type="submit" class="header-search-button" title="Search"></button>
+        <div id="SearchFlyoutContainer" style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-family: &#39;Segoe UI&#39;, &#39;Lucida Grande&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"><div id="SuggestionContainer"><ul style="list-style: none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;"></ul></div></div></form>
+        
+    
+</div>
+
+                <div class="Clear"></div>
+            </div>
+            <div class="Clear"></div>
+            <div class="ux-internav">
+    <div class="toclevel2"> 
+            <a class="normal" href="https://sysdev.microsoft.com/en-us/desktop/" title="Dashboard">Dashboard</a>
+            <a class="normal" href="http://msdn.microsoft.com/windows/desktop/bg161546" title="Get Started">Get Started</a>
+            <a class="normal" href="http://msdn.microsoft.com/library/windows/desktop/aa511258" title="Design">Design</a>
+            <a class="active" href="http://msdn.microsoft.com/windows/desktop/aa904962" title="Develop">Develop</a>
+            <a class="normal" href="http://msdn.microsoft.com/windows/desktop/dd535817" title="Certify">Certify</a>
+    </div>
+    <div class="clear"></div>
+
+            </div>
+            <div id="signIn">
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=11&ct=1368690932&rver=6.0.5276.0&wp=MCLBI&wlcxt=MSDN%24MSDN%24MSDN&wreply=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwindows%2fdesktop%2fdd318693%2528v%3dvs.85%2529.aspx&lc=1033&id=254354&mkt=en-US" title="Sign in">Sign in</a></div>
+        </div>  
+        <div id="blackBar">
+    <div class="toclevel3"> 
+            <a class="active" href="http://msdn.microsoft.com/library/windows/desktop/bg125389" title="Desktop technologies" style="opacity: 1; left: 0px;">Desktop technologies</a>
+            <a class="normal" href="http://msdn.microsoft.com/library/windows/desktop/bg125390" title="Server and system " style="opacity: 1; left: 0px;">Server and system </a>
+            <a class="normal" href="http://msdn.microsoft.com/library/windows/desktop/hh920508(vs.85)" title="API index" style="opacity: 1; left: 0px;">API index</a>
+            <a class="normal" href="http://code.msdn.microsoft.com/windowsdesktop/" title="Samples" style="opacity: 1; left: 0px;">Samples</a>
+            <a class="normal" href="http://msdn.microsoft.com/windows/desktop/aa904945" title="Community" style="opacity: 1; left: 0px;">Community</a>
+    </div>
+    <div class="clear"></div>
+
+        </div>
+    </div>
+
+
+        
+            <div id="body">
+                
+
+
+
+
+
+
+
+
+<div id="leftNav" class="leftNavResize1" style="height: auto;">
+
+
+
+<div id="tocnav" style="">
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff657751(v=vs.85).aspx" id="bg126503_VS.85_en-us" title="Desktop App UI">Desktop App UI</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318661(v=vs.85).aspx" id="ms776025_VS.85_en-us" title="Internationalization for Windows Applications">Internationalization for Windows Applications</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318140(v=vs.85).aspx" id="ms776026_VS.85_en-us" title="Globalization Services">Globalization Services</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd319078(v=vs.85).aspx" id="ms776028_VS.85_en-us" title="National Language Support">National Language Support</a>            </div>
+            <div class="toclevel0" data-toclevel="0" style="padding-left: 0px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd319083(v=vs.85).aspx" id="ee845090_VS.85_en-us" title="National Language Support Reference">National Language Support Reference</a>            </div>
+            <div class="toclevel1" data-toclevel="1" style="padding-left: 13px;" data-childrenloaded="true">
+<a class="toc_expanded" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd319079(v=vs.85).aspx" id="ee845095_VS.85_en-us" title="National Language Support Constants">National Language Support Constants</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317732(v=vs.85).aspx" title="Calendar Identifiers">Calendar Identifiers</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317734(v=vs.85).aspx" title="Calendar Type Information">Calendar Type Information</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317787(v=vs.85).aspx" title="Day, Month, Year, and Era Format Pictures">Day, Month, Year, and Era Format Pictures</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318148(v=vs.85).aspx" title="Hour, Minute, and Second Format Pictures">Hour, Minute, and Second Format Pictures</a>            </div>
+            <div class="toclevel2 current" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="./Language Identifier Constants and Strings (Windows)_files/Language Identifier Constants and Strings (Windows).htm" title="Language Identifier Constants and Strings">Language Identifier Constants and Strings</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<a class="toc_collapsed" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#"></a><a data-tochassubtree="true" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd464799(v=vs.85).aspx" id="ee845096_VS.85_en-us" title="Locale Information Constants">Locale Information Constants</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd319099(v=vs.85).aspx" title="Paper Sizes">Paper Sizes</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd374060(v=vs.85).aspx" title="Sort Order Identifiers">Sort Order Identifiers</a>            </div>
+            <div class="toclevel2" data-toclevel="2" style="padding-left: 26px;">
+<span class="toc_empty"></span><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd374073(v=vs.85).aspx" title="Table of Geographical Locations">Table of Geographical Locations</a>            </div>
+</div>    
+    
+    
+    
+    
+    
+    
+    
+
+<a id="NavigationResize" href="javascript:void(0)" style="left: 227px; display: inline-block;">
+    <img class="cl_nav_resize_open" src="./Language Identifier Constants and Strings (Windows)_files/ImageSprite.png" title="Expand" alt="Expand" style="">
+    <img class="cl_nav_resize_close" src="./Language Identifier Constants and Strings (Windows)_files/ImageSprite.png" title="Minimize" alt="Minimize" style="display: none;">
+</a>
+
+
+
+</div>
+<div id="content" class="content" style="margin-left: 227px; width: auto;">
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    <div id="ratingCounterSeperator" class="cl_lw_vs_seperator" style="display: none;"></div>
+
+    
+
+        
+
+<div class="topic" xmlns="http://www.w3.org/1999/xhtml">
+  <h1 class="title">Language Identifier Constants and Strings</h1><div id="ratingCounter" style="display: block;">
+        <span id="rcA" class="ratingText">
+            20 out of 33 rated this helpful <span id="rateThisPrefix">- </span><a id="rateThisTopic" href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#feedback" title="Rate this topic">Rate this topic</a>
+            
+        </span>
+    </div>
+  
+  <div id="mainSection">
+<div class="clsServerSDKContent">
+
+</div>
+<p>Each <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318691(v=vs.85).aspx">language identifier</a> is composed of a primary 
+       language identifier indicating the language and a sublanguage identifier indicating the country/region. The 
+       language identifier corresponds to a particular locale, for example, English (United States), represented as 
+       "en-US". The language identifier is used as part of the 
+       <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd373763(v=vs.85).aspx">locale identifier</a>.</p>
+<p>A primary or sublanguage identifier can be user-defined or predefined. The table included in this topic 
+         defines the predefined primary language identifiers with their valid sublanguage identifiers and shows the 
+         locale identifiers in which they are used. </p>
+<p class="note"><strong>Note</strong>&nbsp;&nbsp;
+           If there is no sublanguage identifier to use with a primary language identifier, your application should use 
+            <strong>SUBLANG_DEFAULT</strong>. It should use <strong>SUBLANG_NEUTRAL</strong> for 
+            resources that are the same for all sublanguages of a primary language.</p>
+<p>A user-defined primary language identifier has a value in the range 0x0200 to 0x03ff. All other values are 
+         reserved for operating system use.</p>
+<p>A user-defined sublanguage identifier has a value in the range 0x20 to 0x3f. All other values are reserved 
+         for operating system use.</p>
+<table>
+<tbody><tr><th>Locale identifier</th><th>Primary language</th><th>Prim. lang. identifier</th><th>Prim. lang. symbol</th><th>Sublanguage</th><th>Sublang. identifier</th><th>Sublang. symbol</th></tr>
+<tr><td>0x0C00</td><td>Default custom locale language</td><td>0x00</td><td><strong>LANG_NEUTRAL</strong></td><td>Default custom sublanguage</td><td>0x03</td><td><strong>SUBLANG_CUSTOM_DEFAULT</strong></td></tr>
+<tr><td>0x1400</td><td>Default custom MUI locale language</td><td>0x00</td><td><strong>LANG_NEUTRAL</strong></td><td>Default custom MUI sublanguage</td><td>0x05</td><td><strong>SUBLANG_UI_CUSTOM_DEFAULT</strong></td></tr>
+<tr><td>0x007F</td><td>Invariant locale language</td><td>0x7F</td><td><strong>LANG_INVARIANT</strong></td><td>Invariant sublanguage</td><td>0x00</td><td><strong>SUBLANG_NEUTRAL</strong></td></tr>
+<tr><td>0x0000</td><td>Neutral locale language</td><td>0x00</td><td><strong>LANG_NEUTRAL</strong></td><td>Neutral sublanguage</td><td>0x00</td><td><strong>SUBLANG_NEUTRAL</strong></td></tr>
+<tr><td>0x0800</td><td>System default locale language</td><td>0x02</td><td><strong>LANG_SYSTEM_DEFAULT</strong></td><td>System default sublanguage</td><td>0x02</td><td><strong>SUBLANG_SYS_DEFAULT</strong></td></tr>
+<tr><td>0x1000</td><td>Unspecified custom locale language</td><td>0x00</td><td><strong>LANG_NEUTRAL</strong></td><td>Unspecified custom sublanguage</td><td>0x04</td><td><strong>SUBLANG_CUSTOM_UNSPECIFIED</strong></td></tr>
+<tr><td>0x0400</td><td>User default locale language</td><td>0x00</td><td><strong>LANG_USER_DEFAULT</strong></td><td>User default sublanguage</td><td>0x01</td><td><strong>SUBLANG_DEFAULT</strong></td></tr>
+<tr><td>0x0436</td><td>Afrikaans (af)</td><td>0x36</td><td><strong>LANG_AFRIKAANS</strong></td><td>South Africa (ZA)</td><td>0x01</td><td><strong>SUBLANG_AFRIKAANS_SOUTH_AFRICA</strong></td></tr>
+<tr><td>0x041C</td><td>Albanian (sq)</td><td>0x1c</td><td><strong>LANG_ALBANIAN</strong></td><td>Albania (AL)</td><td>0x01</td><td><strong>SUBLANG_ALBANIAN_ALBANIA</strong></td></tr>
+<tr><td>0x0484</td><td>Alsatian (gsw)</td><td>0x84</td><td><strong>LANG_ALSATIAN</strong></td><td>France (FR)</td><td>0x01</td><td><strong>SUBLANG_ALSATIAN_FRANCE</strong></td></tr>
+<tr><td>0x045E</td><td>Amharic (am)</td><td>0x5E</td><td><strong>LANG_AMHARIC</strong></td><td>Ethiopia (ET)</td><td>0x01</td><td><strong>SUBLANG_AMHARIC_ETHIOPIA</strong></td></tr>
+<tr><td>0x1401</td><td>Arabic (ar)</td><td>0x01</td><td><strong>LANG_ARABIC</strong></td><td>Algeria (DZ)</td><td>0x05</td><td><strong>SUBLANG_ARABIC_ALGERIA</strong></td></tr>
+<tr><td>0x3C01</td><td></td><td></td><td></td><td>Bahrain (BH)</td><td>0x0f</td><td><strong>SUBLANG_ARABIC_BAHRAIN</strong></td></tr>
+<tr><td>0x0C01</td><td></td><td></td><td></td><td>Egypt (EG)</td><td>0x03</td><td><strong>SUBLANG_ARABIC_EGYPT</strong></td></tr>
+<tr><td>0x0801</td><td></td><td></td><td></td><td>Iraq (IQ)</td><td>0x02</td><td><strong>SUBLANG_ARABIC_IRAQ</strong></td></tr>
+<tr><td>0x2C01</td><td></td><td></td><td></td><td>Jordan (JO)</td><td>0x0B</td><td><strong>SUBLANG_ARABIC_JORDAN</strong></td></tr>
+<tr><td>0x3401</td><td></td><td></td><td></td><td>Kuwait (KW)</td><td>0x0D</td><td><strong>SUBLANG_ARABIC_KUWAIT</strong></td></tr>
+<tr><td>0x3001</td><td></td><td></td><td></td><td>Lebanon (LB)</td><td>0x0C</td><td><strong>SUBLANG_ARABIC_LEBANON</strong></td></tr>
+<tr><td>0x1001</td><td></td><td></td><td></td><td>Libya (LY)</td><td>0x04</td><td><strong>SUBLANG_ARABIC_LIBYA</strong></td></tr>
+<tr><td>0x1801</td><td></td><td></td><td></td><td>Morocco (MA)</td><td>0x06</td><td><strong>SUBLANG_ARABIC_MOROCCO</strong></td></tr>
+<tr><td>0x2001</td><td></td><td></td><td></td><td>Oman (OM)</td><td>0x08</td><td><strong>SUBLANG_ARABIC_OMAN</strong></td></tr>
+<tr><td>0x4001</td><td></td><td></td><td></td><td>Qatar (QA)</td><td>0x10</td><td><strong>SUBLANG_ARABIC_QATAR</strong></td></tr>
+<tr><td>0x0401</td><td></td><td></td><td></td><td>Saudi Arabia (SA)</td><td>0x01</td><td><strong>SUBLANG_ARABIC_SAUDI_ARABIA</strong></td></tr>
+<tr><td>0x2801</td><td></td><td></td><td></td><td>Syria (SY)</td><td>0x0A</td><td><strong>SUBLANG_ARABIC_SYRIA</strong></td></tr>
+<tr><td>0x1C01</td><td></td><td></td><td></td><td>Tunisia (TN)</td><td>0x07</td><td><strong>SUBLANG_ARABIC_TUNISIA</strong></td></tr>
+<tr><td>0x3801</td><td></td><td></td><td></td><td>U.A.E. (AE)</td><td>0x0E</td><td><strong>SUBLANG_ARABIC_UAE</strong></td></tr>
+<tr><td>0x2401</td><td></td><td></td><td></td><td>Yemen (YE)</td><td>0x09</td><td><strong>SUBLANG_ARABIC_YEMEN</strong></td></tr>
+<tr><td>0x042B</td><td>Armenian (hy)</td><td>0x2B</td><td><strong>LANG_ARMENIAN</strong></td><td>Armenia (AM)</td><td>0x01</td><td><strong>SUBLANG_ARMENIAN_ARMENIA</strong></td></tr>
+<tr><td>0x044D</td><td>Assamese (as)</td><td>0x4D</td><td><strong>LANG_ASSAMESE</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_ASSAMESE_INDIA</strong></td></tr>
+<tr><td>0x082C</td><td>Azeri (az)</td><td>0x2C</td><td><strong>LANG_AZERI</strong></td><td>Azerbaijan, Cyrillic (AZ)</td><td>0x02</td><td><strong>SUBLANG_AZERI_CYRILLIC</strong></td></tr>
+<tr><td>0x042C</td><td></td><td></td><td></td><td>Azerbaijan, Latin (AZ)</td><td>0x01</td><td><strong>SUBLANG_AZERI_LATIN</strong></td></tr>
+<tr><td>0x0445</td><td>Bangla (bn); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 10</a></td><td>0x45</td><td><strong>LANG_BANGLA</strong></td><td>Bangladesh</td><td>0x02</td><td><strong>SUBLANG_BANGLA_BANGLADESH</strong></td></tr>
+<tr><td></td><td></td><td></td><td></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_BANGLA_INDIA</strong></td></tr>
+<tr><td>0x046D</td><td>Bashkir (ba)</td><td>0x6D</td><td><strong>LANG_BASHKIR</strong></td><td>Russia (RU)</td><td>0x01</td><td><strong>SUBLANG_BASHKIR_RUSSIA</strong></td></tr>
+<tr><td>0x042D</td><td>Basque (eu)</td><td>0x2d</td><td><strong>LANG_BASQUE</strong></td><td>Basque (ES)</td><td>0x01</td><td><strong>SUBLANG_BASQUE_BASQUE</strong></td></tr>
+<tr><td>0x0423</td><td>Belarusian (be)</td><td>0x23</td><td><strong>LANG_BELARUSIAN</strong></td><td>Belarus (BY)</td><td>0x01</td><td><strong>SUBLANG_BELARUSIAN_BELARUS</strong></td></tr>
+<tr><td>0x781A</td><td>Bosnian (bs)</td><td></td><td><strong>LANG_BOSNIAN_NEUTRAL</strong></td><td>Neutral</td><td></td><td></td></tr>
+<tr><td>0x201A</td><td>Bosnian (bs); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 2</a></td><td>0x1A</td><td><strong>LANG_BOSNIAN</strong></td><td>Bosnia and Herzegovina, Cyrillic (BA)</td><td>0x08</td><td><strong>SUBLANG_BOSNIAN_BOSNIA_HERZEGOVINA_CYRILLIC</strong></td></tr>
+<tr><td>0x141A</td><td></td><td></td><td></td><td>Bosnia and Herzegovina, Latin (BA)</td><td>0x05</td><td><strong>SUBLANG_BOSNIAN_BOSNIA_HERZEGOVINA_LATIN</strong></td></tr>
+<tr><td>0x047E</td><td>Breton (br)</td><td>0x7E</td><td><strong>LANG_BRETON</strong></td><td>France (FR)</td><td>0x01</td><td><strong>SUBLANG_BRETON_FRANCE</strong></td></tr>
+<tr><td>0x0402</td><td>Bulgarian (bg)</td><td>0x02</td><td><strong>LANG_BULGARIAN</strong></td><td>Bulgaria (BG)</td><td>0x01</td><td><strong>SUBLANG_BULGARIAN_BULGARIA</strong></td></tr>
+<tr><td>0x0492</td><td>Central Kurdish (ku)</td><td>0x92</td><td><strong>LANG_CENTRAL_KURDISH</strong></td><td>Iraq (IQ)</td><td>0x01</td><td><strong>SUBLANG_CENTRAL_KURDISH_IRAQ</strong></td></tr>
+<tr><td>0x045C</td><td>Cherokee (chr)</td><td>0x5C</td><td><strong>LANG_CHEROKEE</strong></td><td>Cherokee (Cher)</td><td>0x01</td><td><strong>SUBLANG_CHEROKEE_CHEROKEE</strong></td></tr>
+<tr><td>0x0403</td><td>Catalan (ca)</td><td>0x03</td><td><strong>LANG_CATALAN</strong></td><td>Spain (ES)</td><td>0x01</td><td><strong>SUBLANG_CATALAN_CATALAN</strong></td></tr>
+<tr><td>0x0C04</td><td>Chinese (zh); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 1</a></td><td>0x04</td><td><strong>LANG_CHINESE</strong></td><td>Hong Kong SAR, PRC (HK)</td><td>0x03</td><td><strong>SUBLANG_CHINESE_HONGKONG</strong></td></tr>
+<tr><td>0x1404</td><td></td><td></td><td></td><td>Macao SAR (MO)</td><td>0x05</td><td><strong>SUBLANG_CHINESE_MACAU</strong></td></tr>
+<tr><td>0x1004</td><td></td><td></td><td></td><td>Singapore (SG)</td><td>0x04</td><td><strong>SUBLANG_CHINESE_SINGAPORE</strong></td></tr>
+<tr><td>0x0004</td><td>Chinese (zh)</td><td>0x04</td><td><strong>LANG_CHINESE_SIMPLIFIED</strong></td><td>Simplified (Hans)</td><td>0x02</td><td><strong>SUBLANG_CHINESE_SIMPLIFIED</strong></td></tr>
+<tr><td>0x7C04</td><td>Chinese (zh)</td><td></td><td><strong>LANG_CHINESE_TRADITIONAL</strong></td><td>Traditional (Hant)</td><td>0x01</td><td><strong>SUBLANG_CHINESE_TRADITIONAL</strong></td></tr>
+<tr><td>0x0483</td><td>Corsican (co)</td><td>0x83</td><td><strong>LANG_CORSICAN</strong></td><td>France (FR)</td><td>0x01</td><td><strong>SUBLANG_CORSICAN_FRANCE</strong></td></tr>
+<tr><td>0x001A</td><td>Croatian (hr); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 2</a></td><td>0x1A</td><td><strong>LANG_CROATIAN</strong></td><td>Neutral</td><td></td><td></td></tr>
+<tr><td>0x101A</td><td>Croatian (hr)</td><td>0x1a</td><td><strong>LANG_CROATIAN</strong></td><td>Bosnia and Herzegovina, Latin (BA)</td><td>0x04</td><td><strong>SUBLANG_CROATIAN_BOSNIA_HERZEGOVINA_LATIN</strong></td></tr>
+<tr><td>0x041A</td><td></td><td></td><td></td><td>Croatia (HR)</td><td>0x01</td><td><strong>SUBLANG_CROATIAN_CROATIA</strong></td></tr>
+<tr><td>0x0405</td><td>Czech (cs)</td><td>0x05</td><td><strong>LANG_CZECH</strong></td><td>Czech Republic (CZ)</td><td>0x01</td><td><strong>SUBLANG_CZECH_CZECH_REPUBLIC</strong></td></tr>
+<tr><td>0x0406</td><td>Danish (da)</td><td>0x06</td><td><strong>LANG_DANISH</strong></td><td>Denmark (DK)</td><td>0x01</td><td><strong>SUBLANG_DANISH_DENMARK</strong></td></tr>
+<tr><td>0x048C</td><td>Dari (prs)</td><td>0x8C</td><td><strong>LANG_DARI</strong></td><td>Afghanistan (AF)</td><td>0x01</td><td><strong>SUBLANG_DARI_AFGHANISTAN</strong></td></tr>
+<tr><td>0x0465</td><td>Divehi (dv)</td><td>0x65</td><td><strong>LANG_DIVEHI</strong></td><td>Maldives (MV)</td><td>0x01</td><td><strong>SUBLANG_DIVEHI_MALDIVES</strong></td></tr>
+<tr><td>0x0813</td><td>Dutch (nl)</td><td>0x13</td><td><strong>LANG_DUTCH</strong></td><td>Belgium (BE)</td><td>0x02</td><td><strong>SUBLANG_DUTCH_BELGIAN</strong></td></tr>
+<tr><td>0x0413</td><td></td><td></td><td></td><td>Netherlands (NL)</td><td>0x01</td><td><strong>SUBLANG_DUTCH</strong></td></tr>
+<tr><td>0x0C09</td><td>English (en)</td><td>0x09</td><td><strong>LANG_ENGLISH</strong></td><td>Australia (AU)</td><td>0x03</td><td><strong>SUBLANG_ENGLISH_AUS</strong></td></tr>
+<tr><td>0x2809</td><td></td><td></td><td></td><td>Belize (BZ)</td><td>0x0A</td><td><strong>SUBLANG_ENGLISH_BELIZE</strong></td></tr>
+<tr><td>0x1009</td><td></td><td></td><td></td><td>Canada (CA)</td><td>0x04</td><td><strong>SUBLANG_ENGLISH_CAN</strong></td></tr>
+<tr><td>0x2409</td><td></td><td></td><td></td><td>Caribbean (029)</td><td>0x09</td><td><strong>SUBLANG_ENGLISH_CARIBBEAN</strong></td></tr>
+<tr><td>0x4009</td><td></td><td></td><td></td><td>India (IN)</td><td>0x10</td><td><strong>SUBLANG_ENGLISH_INDIA</strong></td></tr>
+<tr><td>0x1809</td><td></td><td></td><td></td><td>Ireland (IE); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 3</a></td><td>0x06</td><td><strong>SUBLANG_ENGLISH_EIRE</strong></td></tr>
+<tr><td>0x1809</td><td></td><td></td><td></td><td>Ireland (IE); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 3</a></td><td>0x06</td><td><strong>SUBLANG_ENGLISH_IRELAND</strong></td></tr>
+<tr><td>0x2009</td><td></td><td></td><td></td><td>Jamaica (JM)</td><td>0x08</td><td><strong>SUBLANG_ENGLISH_JAMAICA</strong></td></tr>
+<tr><td>0x4409</td><td></td><td></td><td></td><td>Malaysia (MY)</td><td>0x11</td><td><strong>SUBLANG_ENGLISH_MALAYSIA</strong></td></tr>
+<tr><td>0x1409</td><td></td><td></td><td></td><td>New Zealand (NZ)</td><td>0x05</td><td><strong>SUBLANG_ENGLISH_NZ</strong></td></tr>
+<tr><td>0x3409</td><td></td><td></td><td></td><td>Philippines (PH)</td><td>0x0D</td><td><strong>SUBLANG_ENGLISH_PHILIPPINES</strong></td></tr>
+<tr><td>0x4809</td><td></td><td></td><td></td><td>Singapore (SG)</td><td>0x12</td><td><strong>SUBLANG_ENGLISH_SINGAPORE</strong></td></tr>
+<tr><td>0x1c09</td><td></td><td></td><td></td><td>South Africa (ZA)</td><td>0x07</td><td><strong>SUBLANG_ENGLISH_SOUTH_AFRICA</strong></td></tr>
+<tr><td>0x2C09</td><td></td><td></td><td></td><td>Trinidad and Tobago (TT)</td><td>0x0B</td><td><strong>SUBLANG_ENGLISH_TRINIDAD</strong></td></tr>
+<tr><td>0x0809</td><td></td><td></td><td></td><td>United Kingdom (GB)</td><td>0x02</td><td><strong>SUBLANG_ENGLISH_UK</strong></td></tr>
+<tr><td>0x0409</td><td></td><td></td><td></td><td>United States (US)</td><td>0x01</td><td><strong>SUBLANG_ENGLISH_US</strong></td></tr>
+<tr><td>0x3009</td><td></td><td></td><td></td><td>Zimbabwe (ZW)</td><td>0x0C</td><td><strong>SUBLANG_ENGLISH_ZIMBABWE</strong></td></tr>
+<tr><td>0x0425</td><td>Estonian (et)</td><td>0x25</td><td><strong>LANG_ESTONIAN</strong></td><td>Estonia (EE)</td><td>0x01</td><td><strong>SUBLANG_ESTONIAN_ESTONIA</strong></td></tr>
+<tr><td>0x0438</td><td>Faroese (fo)</td><td>0x38</td><td><strong>LANG_FAEROESE</strong></td><td>Faroe Islands (FO)</td><td>0x01</td><td><strong>SUBLANG_FAEROESE_FAROE_ISLANDS</strong></td></tr>
+<tr><td>0x0464</td><td>Filipino (fil)</td><td>0x64</td><td><strong>LANG_FILIPINO</strong></td><td>Philippines (PH)</td><td>0x01</td><td><strong>SUBLANG_FILIPINO_PHILIPPINES</strong></td></tr>
+<tr><td>0x040B</td><td>Finnish (fi)</td><td>0x0B</td><td><strong>LANG_FINNISH</strong></td><td>Finland (FI)</td><td>0x01</td><td><strong>SUBLANG_FINNISH_FINLAND</strong></td></tr>
+<tr><td>0x080c</td><td>French (fr)</td><td>0x0C</td><td><strong>LANG_FRENCH</strong></td><td>Belgium (BE)</td><td>0x02</td><td><strong>SUBLANG_FRENCH_BELGIAN</strong></td></tr>
+<tr><td>0x0C0C</td><td></td><td></td><td></td><td>Canada (CA)</td><td>0x03</td><td><strong>SUBLANG_FRENCH_CANADIAN</strong></td></tr>
+<tr><td>0x040c</td><td></td><td></td><td></td><td>France (FR)</td><td>0x01</td><td><strong>SUBLANG_FRENCH</strong></td></tr>
+<tr><td>0x140C</td><td></td><td></td><td></td><td>Luxembourg (LU)</td><td>0x05</td><td><strong>SUBLANG_FRENCH_LUXEMBOURG</strong></td></tr>
+<tr><td>0x180C</td><td></td><td></td><td></td><td>Monaco (MC)</td><td>0x06</td><td><strong>SUBLANG_FRENCH_MONACO</strong></td></tr>
+<tr><td>0x100C</td><td></td><td></td><td></td><td>Switzerland (CH)</td><td>0x04</td><td><strong>SUBLANG_FRENCH_SWISS</strong></td></tr>
+<tr><td>0x0462</td><td>Frisian (fy)</td><td>0x62</td><td><strong>LANG_FRISIAN</strong></td><td>Netherlands (NL)</td><td>0x01</td><td><strong>SUBLANG_FRISIAN_NETHERLANDS</strong></td></tr>
+<tr><td>0x0456</td><td>Galician (gl)</td><td>0x56</td><td><strong>LANG_GALICIAN</strong></td><td>Spain (ES)</td><td>0x01</td><td><strong>SUBLANG_GALICIAN_GALICIAN</strong></td></tr>
+<tr><td>0x0437</td><td>Georgian (ka)</td><td>0x37</td><td><strong>LANG_GEORGIAN</strong></td><td>Georgia (GE)</td><td>0x01</td><td><strong>SUBLANG_GEORGIAN_GEORGIA</strong></td></tr>
+<tr><td>0x0C07</td><td>German (de)</td><td>0x07</td><td><strong>LANG_GERMAN</strong></td><td>Austria (AT)</td><td>0x03</td><td><strong>SUBLANG_GERMAN_AUSTRIAN</strong></td></tr>
+<tr><td>0x0407</td><td></td><td></td><td></td><td>Germany (DE)</td><td>0x01</td><td><strong>SUBLANG_GERMAN</strong></td></tr>
+<tr><td>0x1407</td><td></td><td></td><td></td><td>Liechtenstein (LI)</td><td>0x05</td><td><strong>SUBLANG_GERMAN_LIECHTENSTEIN</strong></td></tr>
+<tr><td>0x1007</td><td></td><td></td><td></td><td>Luxembourg (LU)</td><td>0x04</td><td><strong>SUBLANG_GERMAN_LUXEMBOURG</strong></td></tr>
+<tr><td>0x0807</td><td></td><td></td><td></td><td>Switzerland (CH)</td><td>0x02</td><td><strong>SUBLANG_GERMAN_SWISS</strong></td></tr>
+<tr><td>0x0408</td><td>Greek (el)</td><td>0x08</td><td><strong>LANG_GREEK</strong></td><td>Greece (GR)</td><td>0x01</td><td><strong>SUBLANG_GREEK_GREECE</strong></td></tr>
+<tr><td>0x046F</td><td>Greenlandic (kl)</td><td>0x6F</td><td><strong>LANG_GREENLANDIC</strong></td><td>Greenland (GL)</td><td>0x01</td><td><strong>SUBLANG_GREENLANDIC_GREENLAND</strong></td></tr>
+<tr><td>0x0447</td><td>Gujarati (gu)</td><td>0x47</td><td><strong>LANG_GUJARATI</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_GUJARATI_INDIA</strong></td></tr>
+<tr><td>0x0468</td><td>Hausa (ha)</td><td>0x68</td><td><strong>LANG_HAUSA</strong></td><td>Nigeria (NG)</td><td>0x01</td><td><strong>SUBLANG_HAUSA_NIGERIA_LATIN</strong></td></tr>
+<tr><td>0x0475</td><td>Hawiian (haw)</td><td>0x75</td><td><strong>LANG_HAWAIIAN</strong></td><td>United States (US)</td><td>0x01</td><td><strong>SUBLANG_HAWAIIAN_US</strong></td></tr>
+<tr><td>0x040D</td><td>Hebrew (he)</td><td>0x0D</td><td><strong>LANG_HEBREW</strong></td><td>Israel (IL)</td><td>0x01</td><td><strong>SUBLANG_HEBREW_ISRAEL</strong></td></tr>
+<tr><td>0x0439</td><td>Hindi (hi)</td><td>0x39</td><td><strong>LANG_HINDI</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_HINDI_INDIA</strong></td></tr>
+<tr><td>0x040E</td><td>Hungarian (hu)</td><td>0x0E</td><td><strong>LANG_HUNGARIAN</strong></td><td>Hungary (HU)</td><td>0x01</td><td><strong>SUBLANG_HUNGARIAN_HUNGARY</strong></td></tr>
+<tr><td>0x040F</td><td>Icelandic (is)</td><td>0x0F</td><td><strong>LANG_ICELANDIC</strong></td><td>Iceland (IS)</td><td>0x01</td><td><strong>SUBLANG_ICELANDIC_ICELAND</strong></td></tr>
+<tr><td>0x0470</td><td>Igbo (ig)</td><td>0x70</td><td><strong>LANG_IGBO</strong></td><td>Nigeria (NG)</td><td>0x01</td><td><strong>SUBLANG_IGBO_NIGERIA</strong></td></tr>
+<tr><td>0x0421</td><td>Indonesian (id)</td><td>0x21</td><td><strong>LANG_INDONESIAN</strong></td><td>Indonesia (ID)</td><td>0x01</td><td><strong>SUBLANG_INDONESIAN_INDONESIA</strong></td></tr>
+<tr><td>0x085D</td><td>Inuktitut (iu)</td><td>0x5D</td><td><strong>LANG_INUKTITUT</strong></td><td>Canada (CA), Latin</td><td>0x02</td><td><strong>SUBLANG_INUKTITUT_CANADA_LATIN</strong></td></tr>
+<tr><td>0x045D</td><td></td><td></td><td></td><td>Canada (CA), Canadian Syllabics</td><td>0x01</td><td><strong>SUBLANG_INUKTITUT_CANADA</strong></td></tr>
+<tr><td>0x083C</td><td>Irish (ga); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 4</a></td><td>0x3C</td><td><strong>LANG_IRISH</strong></td><td>Ireland (IE)</td><td>0x02</td><td><strong>SUBLANG_IRISH_IRELAND</strong></td></tr>
+<tr><td>0x0434</td><td>isiXhosa (xh)</td><td>0x34</td><td><strong>LANG_XHOSA</strong></td><td>South Africa (ZA)</td><td>0x01</td><td><strong>SUBLANG_XHOSA_SOUTH_AFRICA</strong></td></tr>
+<tr><td>0x0435</td><td>isiZulu (zu)</td><td>0x35</td><td><strong>LANG_ZULU</strong></td><td>South Africa (ZA)</td><td>0x01</td><td><strong>SUBLANG_ZULU_SOUTH_AFRICA</strong></td></tr>
+<tr><td>0x0410</td><td>Italian (it)</td><td>0x10</td><td><strong>LANG_ITALIAN</strong></td><td>Italy (IT)</td><td>0x01</td><td><strong>SUBLANG_ITALIAN</strong></td></tr>
+<tr><td>0x0810</td><td></td><td></td><td></td><td>Switzerland (CH)</td><td>0x02</td><td><strong>SUBLANG_ITALIAN_SWISS</strong></td></tr>
+<tr><td>0x0411</td><td>Japanese (ja)</td><td>0x11</td><td><strong>LANG_JAPANESE</strong></td><td>Japan (JP)</td><td>0x01</td><td><strong>SUBLANG_JAPANESE_JAPAN</strong></td></tr>
+<tr><td>0x044B</td><td>Kannada (kn)</td><td>0x4B</td><td><strong>LANG_KANNADA</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_KANNADA_INDIA</strong></td></tr>
+<tr><td>______</td><td>(reserved)</td><td>0x60</td><td><strong>LANG_KASHMIRI</strong></td><td>(reserved)</td><td>0x02</td><td><strong>SUBLANG_KASHMIRI_INDIA</strong></td></tr>
+<tr><td></td><td></td><td></td><td></td><td>(reserved)</td><td>0x02</td><td><strong>SUBLANG_KASHMIRI_SASIA</strong></td></tr>
+<tr><td>0x043F</td><td>Kazakh (kk)</td><td>0x3F</td><td><strong>LANG_KAZAK</strong></td><td>Kazakhstan (KZ)</td><td>0x01</td><td><strong>SUBLANG_KAZAK_KAZAKHSTAN</strong></td></tr>
+<tr><td>0x0453</td><td>Khmer (kh)</td><td>0x53</td><td><strong>LANG_KHMER</strong></td><td>Cambodia (KH)</td><td>0x01</td><td><strong>SUBLANG_KHMER_CAMBODIA</strong></td></tr>
+<tr><td>0x0486</td><td>K'iche (qut)</td><td>0x86</td><td><strong>LANG_KICHE</strong></td><td>Guatemala (GT)</td><td>0x01</td><td><strong>SUBLANG_KICHE_GUATEMALA</strong></td></tr>
+<tr><td>0x0487</td><td>Kinyarwanda (rw)</td><td>0x87</td><td><strong>LANG_KINYARWANDA</strong></td><td>Rwanda (RW)</td><td>0x01</td><td><strong>SUBLANG_KINYARWANDA_RWANDA</strong></td></tr>
+<tr><td>0x0457</td><td>Konkani (kok)</td><td>0x57</td><td><strong>LANG_KONKANI</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_KONKANI_INDIA</strong></td></tr>
+<tr><td>0x0412</td><td>Korean (ko)</td><td>0x12</td><td><strong>LANG_KOREAN</strong></td><td>Korea (KR)</td><td>0x01</td><td><strong>SUBLANG_KOREAN</strong></td></tr>
+<tr><td>0x0440</td><td>Kyrgyz (ky)</td><td>0x40</td><td><strong>LANG_KYRGYZ</strong></td><td>Kyrgyzstan (KG)</td><td>0x01</td><td><strong>SUBLANG_KYRGYZ_KYRGYZSTAN</strong></td></tr>
+<tr><td>0x0454</td><td>Lao (lo)</td><td>0x54</td><td><strong>LANG_LAO</strong></td><td>Lao PDR (LA)</td><td>0x01</td><td><strong>SUBLANG_LAO_LAO</strong></td></tr>
+<tr><td>0x0426</td><td>Latvian (lv)</td><td>0x26</td><td><strong>LANG_LATVIAN</strong></td><td>Latvia (LV)</td><td>0x01</td><td><strong>SUBLANG_LATVIAN_LATVIA</strong></td></tr>
+<tr><td>0x0427</td><td>Lithuanian (lt)</td><td>0x27</td><td><strong>LANG_LITHUANIAN</strong></td><td>Lithuanian (LT); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 5</a></td><td>0x01</td><td><strong>SUBLANG_LITHUANIAN_LITHUANIA</strong></td></tr>
+<tr><td>0x082E</td><td>Lower Sorbian (dsb)</td><td>0x2E</td><td><strong>LANG_LOWER_SORBIAN</strong></td><td>Germany (DE)</td><td>0x02</td><td><strong>SUBLANG_LOWER_SORBIAN_GERMANY</strong></td></tr>
+<tr><td>0x046E</td><td>Luxembourgish (lb)</td><td>0x6E</td><td><strong>LANG_LUXEMBOURGISH</strong></td><td>Luxembourg (LU)</td><td>0x01</td><td><strong>SUBLANG_LUXEMBOURGISH_LUXEMBOURG</strong></td></tr>
+<tr><td>0x042F</td><td>Macedonian (mk)</td><td>0x2F</td><td><strong>LANG_MACEDONIAN</strong></td><td>Macedonia, FYROM (MK)</td><td>0x01</td><td><strong>SUBLANG_MACEDONIAN_MACEDONIA</strong></td></tr>
+<tr><td>0x083E</td><td>Malay (ms)</td><td>0x3E</td><td><strong>LANG_MALAY</strong></td><td>Brunei Darassalam (BN)</td><td>0x02</td><td><strong>SUBLANG_MALAY_BRUNEI_DARUSSALAM</strong></td></tr>
+<tr><td>0x043e</td><td></td><td></td><td></td><td>Malaysia (MY)</td><td>0x01</td><td><strong>SUBLANG_MALAY_MALAYSIA</strong></td></tr>
+<tr><td>0x044C</td><td>Malayalam (ml)</td><td>0x4C</td><td><strong>LANG_MALAYALAM</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_MALAYALAM_INDIA</strong></td></tr>
+<tr><td>0x043A</td><td>Maltese (mt)</td><td>0x3A</td><td><strong>LANG_MALTESE</strong></td><td>Malta (MT)</td><td>0x01</td><td><strong>SUBLANG_MALTESE_MALTA</strong></td></tr>
+<tr><td></td><td>(reserved)</td><td>0x58</td><td><strong>LANG_MANIPURI</strong></td><td></td><td></td><td></td></tr>
+<tr><td>0x0481</td><td>Maori (mi)</td><td>0x81</td><td><strong>LANG_MAORI</strong></td><td>New Zealand (NZ)</td><td>0x01</td><td><strong>SUBLANG_MAORI_NEW_ZEALAND</strong></td></tr>
+<tr><td>0x047A</td><td>Mapudungun (arn)</td><td>0x7A</td><td><strong>LANG_MAPUDUNGUN</strong></td><td>Chile (CL)</td><td>0x01</td><td><strong>SUBLANG_MAPUDUNGUN_CHILE</strong></td></tr>
+<tr><td>0x044E</td><td>Marathi (mr)</td><td>0x4E</td><td><strong>LANG_MARATHI</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_MARATHI_INDIA</strong></td></tr>
+<tr><td>0x047C</td><td>Mohawk (moh)</td><td>0x7C</td><td><strong>LANG_MOHAWK</strong></td><td>Canada (CA)</td><td>0x01</td><td><strong>SUBLANG_MOHAWK_MOHAWK</strong></td></tr>
+<tr><td>0x0450</td><td>Mongolian (mn)</td><td>0x50</td><td><strong>LANG_MONGOLIAN</strong></td><td>Mongolia, Cyrillic (MN)</td><td>0x01</td><td><strong>SUBLANG_MONGOLIAN_CYRILLIC_MONGOLIA</strong></td></tr>
+<tr><td>0x0850</td><td></td><td></td><td></td><td>Mongolia, Mong (MN)</td><td>0x02</td><td><strong>SUBLANG_MONGOLIAN_PRC</strong></td></tr>
+<tr><td>0x0461</td><td>Nepali (ne)</td><td>0x61</td><td><strong>LANG_NEPALI</strong></td><td>Nepal (NP)</td><td>0x01</td><td><strong>SUBLANG_NEPALI_NEPAL</strong></td></tr>
+<tr><td></td><td></td><td></td><td></td><td>India (IN)</td><td>0x02</td><td><strong>SUBLANG_NEPALI_INDIA</strong></td></tr>
+<tr><td>0x0414</td><td>Norwegian (no)</td><td>0x14</td><td><strong>LANG_NORWEGIAN</strong></td><td>Bokmål, Norway (NO)</td><td>0x01</td><td><strong>SUBLANG_NORWEGIAN_BOKMAL</strong></td></tr>
+<tr><td>0x0814</td><td></td><td></td><td></td><td>Nynorsk, Norway (NO)</td><td>0x02</td><td><strong>SUBLANG_NORWEGIAN_NYNORSK</strong></td></tr>
+<tr><td>0x0482</td><td>Occitan (oc)</td><td>0x82</td><td><strong>LANG_OCCITAN</strong></td><td>France (FR)</td><td>0x01</td><td><strong>SUBLANG_OCCITAN_FRANCE</strong></td></tr>
+<tr><td>0x0448</td><td>Oriya (or)</td><td>0x48</td><td><strong>LANG_ORIYA</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_ORIYA_INDIA</strong></td></tr>
+<tr><td>0x0463</td><td>Pashto (ps)</td><td>0x63</td><td><strong>LANG_PASHTO</strong></td><td>Afghanistan (AF)</td><td>0x01</td><td><strong>SUBLANG_PASHTO_AFGHANISTAN</strong></td></tr>
+<tr><td>0x0429</td><td>Persian (fa); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 6</a></td><td>0x29</td><td><strong>LANG_PERSIAN</strong></td><td>Iran (IR)</td><td>0x01</td><td><strong>SUBLANG_PERSIAN_IRAN</strong></td></tr>
+<tr><td>0x0415</td><td>Polish (pl)</td><td>0x15</td><td><strong>LANG_POLISH</strong></td><td>Poland (PL)</td><td>0x01</td><td><strong>SUBLANG_POLISH_POLAND</strong></td></tr>
+<tr><td>0x0416</td><td>Portuguese (pt)</td><td>0x16</td><td><strong>LANG_PORTUGUESE</strong></td><td>Brazil (BR)</td><td>0x01</td><td><strong>SUBLANG_PORTUGUESE_BRAZILIAN</strong></td></tr>
+<tr><td>0x0816</td><td></td><td></td><td></td><td>Portugal (PT); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 7</a></td><td>0x02</td><td><strong>SUBLANG_PORTUGUESE</strong></td></tr>
+<tr><td>0x0867</td><td>Pular (ff)</td><td>0x67</td><td><strong>LANG_PULAR</strong></td><td>Senegal (SN)</td><td>0x02</td><td><strong>SUBLANG_PULAR_SENEGAL</strong></td></tr>
+<tr><td>0x0446</td><td>Punjabi (pa)</td><td>0x46</td><td><strong>LANG_PUNJABI</strong></td><td>India, Gurmukhi script (IN)</td><td>0x01</td><td><strong>SUBLANG_PUNJABI_INDIA</strong></td></tr>
+<tr><td>0x0846</td><td></td><td></td><td></td><td>Pakistan, Arabic script(PK)</td><td>0x02</td><td><strong>SUBLANG_PUNJABI_PAKISTAN</strong></td></tr>
+<tr><td>0x046B</td><td>Quechua (quz)</td><td>0x6B</td><td><strong>LANG_QUECHUA</strong></td><td>Bolivia (BO)</td><td>0x01</td><td><strong>SUBLANG_QUECHUA_BOLIVIA</strong></td></tr>
+<tr><td>0x086B</td><td></td><td></td><td></td><td>Ecuador (EC)</td><td>0x02</td><td><strong>SUBLANG_QUECHUA_ECUADOR</strong></td></tr>
+<tr><td>0x0C6B</td><td></td><td></td><td></td><td>Peru (PE)</td><td>0x03</td><td><strong>SUBLANG_QUECHUA_PERU</strong></td></tr>
+<tr><td>0x0418</td><td>Romanian (ro)</td><td>0x18</td><td><strong>LANG_ROMANIAN</strong></td><td>Romania (RO)</td><td>0x01</td><td><strong>SUBLANG_ROMANIAN_ROMANIA</strong></td></tr>
+<tr><td>0x0417</td><td>Romansh (rm)</td><td>0x17</td><td><strong>LANG_ROMANSH</strong></td><td>Switzerland (CH)</td><td>0x01</td><td><strong>SUBLANG_ROMANSH_SWITZERLAND</strong></td></tr>
+<tr><td>0x0419</td><td>Russian (ru)</td><td>0x19</td><td><strong>LANG_RUSSIAN</strong></td><td>Russia (RU)</td><td>0x01</td><td><strong>SUBLANG_RUSSIAN_RUSSIA</strong></td></tr>
+<tr><td>0x0485</td><td>Sakha (sah); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 9</a></td><td>0x85</td><td><strong>LANG_SAKHA</strong></td><td>Russia (RU)</td><td>0x01</td><td><strong>SUBLANG_SAKHA_RUSSIA</strong></td></tr>
+<tr><td>0x243B</td><td>Sami (smn)</td><td>0x3B</td><td><strong>LANG_SAMI</strong></td><td>Inari, Finland (FI)</td><td>0x09</td><td><strong>SUBLANG_SAMI_INARI_FINLAND</strong></td></tr>
+<tr><td>0x103B</td><td>Sami (smj)</td><td></td><td></td><td>Lule, Norway (NO)</td><td>0x04</td><td><strong>SUBLANG_SAMI_LULE_NORWAY</strong></td></tr>
+<tr><td>0x143B</td><td></td><td></td><td></td><td>Lule, Sweden (SE)</td><td>0x05</td><td><strong>SUBLANG_SAMI_LULE_SWEDEN</strong></td></tr>
+<tr><td>0x0C3B</td><td>Sami (se)</td><td></td><td></td><td>Northern, Finland (FI)</td><td>0x03</td><td><strong>SUBLANG_SAMI_NORTHERN_FINLAND</strong></td></tr>
+<tr><td>0x043B</td><td></td><td></td><td></td><td>Northern, Norway (NO)</td><td>0x01</td><td><strong>SUBLANG_SAMI_NORTHERN_NORWAY</strong></td></tr>
+<tr><td>0x083B</td><td></td><td></td><td></td><td>Northern, Sweden (SE)</td><td>0x02</td><td><strong>SUBLANG_SAMI_NORTHERN_SWEDEN</strong></td></tr>
+<tr><td>0x203B</td><td>Sami (sms)</td><td></td><td></td><td>Skolt, Finland (FI)</td><td>0x08</td><td><strong>SUBLANG_SAMI_SKOLT_FINLAND</strong></td></tr>
+<tr><td>0x183B</td><td>Sami (sma)</td><td></td><td></td><td>Southern, Norway (NO)</td><td>0x06</td><td><strong>SUBLANG_SAMI_SOUTHERN_NORWAY</strong></td></tr>
+<tr><td>0x1C3B</td><td></td><td></td><td></td><td>Southern, Sweden (SE)</td><td>0x07</td><td><strong>SUBLANG_SAMI_SOUTHERN_SWEDEN</strong></td></tr>
+<tr><td>0x044F</td><td>Sanskrit (sa)</td><td>0x4F</td><td><strong>LANG_SANSKRIT</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_SANSKRIT_INDIA</strong></td></tr>
+<tr><td>0x7C1A</td><td>Serbian (sr); see <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">note 2</a></td><td></td><td><strong>LANG_SERBIAN_NEUTRAL</strong></td><td>Neutral</td><td></td><td></td></tr>
+<tr><td>0x1C1A</td><td></td><td>0x1a</td><td><strong>LANG_SERBIAN</strong></td><td>Bosnia and Herzegovina, Cyrillic (BA)</td><td>0x07</td><td><strong>SUBLANG_SERBIAN_BOSNIA_HERZEGOVINA_CYRILLIC</strong></td></tr>
+<tr><td>0x181A</td><td></td><td></td><td></td><td>Bosnia and Herzegovina, Latin (BA)</td><td>0x06</td><td><strong>SUBLANG_SERBIAN_BOSNIA_HERZEGOVINA_LATIN</strong></td></tr>
+<tr><td></td><td></td><td></td><td></td><td>Croatia (HR)</td><td>0x01</td><td><strong>SUBLANG_SERBIAN_CROATIA</strong></td></tr>
+<tr><td>0x0C1A</td><td></td><td></td><td></td><td>Serbia and Montenegro, Former, Cyrillic (CS)</td><td>0x03</td><td><strong>SUBLANG_SERBIAN_CYRILLIC</strong></td></tr>
+<tr><td>0x081A</td><td></td><td></td><td></td><td>Serbia and Montenegro, Former, Latin (CS)</td><td>0x02</td><td><strong>SUBLANG_SERBIAN_LATIN</strong></td></tr>
+<tr><td>0x046C</td><td>Sesotho sa Leboa (nso)</td><td>0x6C</td><td><strong>LANG_SOTHO</strong></td><td>South Africa (ZA)</td><td>0x01</td><td><strong>SUBLANG_SOTHO_NORTHERN_SOUTH_AFRICA</strong></td></tr>
+<tr><td>0x0832</td><td>Setswana / Tswana (tn)</td><td>0x32</td><td><strong>LANG_TSWANA</strong></td><td>Botswana (BW)</td><td>0x02</td><td><strong>SUBLANG_TSWANA_BOTSWANA</strong></td></tr>
+<tr><td>0x0432</td><td></td><td></td><td></td><td>South Africa (ZA)</td><td>0x01</td><td><strong>SUBLANG_TSWANA_SOUTH_AFRICA</strong></td></tr>
+<tr><td></td><td>(reserved)</td><td>0x59</td><td><strong>LANG_SINDHI</strong></td><td>(reserved)</td><td>0x02</td><td><strong>SUBLANG_SINDHI_AFGHANISTAN</strong></td></tr>
+<tr><td>0x0459</td><td>(reserved)</td><td></td><td></td><td>(reserved)</td><td>0x01</td><td><strong>SUBLANG_SINDHI_INDIA</strong></td></tr>
+<tr><td>0x0859</td><td>Sindhi (sd)</td><td></td><td></td><td>Pakistan (PK)</td><td>0x02</td><td><strong>SUBLANG_SINDHI_PAKISTAN</strong></td></tr>
+<tr><td>0x045B</td><td>Sinhala (si)</td><td>0x5B</td><td><strong>LANG_SINHALESE</strong></td><td>Sri Lanka (LK)</td><td>0x01</td><td><strong>SUBLANG_SINHALESE_SRI_LANKA</strong></td></tr>
+<tr><td>0x041B</td><td>Slovak (sk)</td><td>0x1b</td><td><strong>LANG_SLOVAK</strong></td><td>Slovakia (SK)</td><td>0x01</td><td><strong>SUBLANG_SLOVAK_SLOVAKIA</strong></td></tr>
+<tr><td>0x0424</td><td>Slovenian (sl)</td><td>0x24</td><td><strong>LANG_SLOVENIAN</strong></td><td>Slovenia (SI)</td><td>0x01</td><td><strong>SUBLANG_SLOVENIAN_SLOVENIA</strong></td></tr>
+<tr><td>0x2C0A</td><td>Spanish (es)</td><td>0x0A</td><td><strong>LANG_SPANISH</strong></td><td>Argentina (AR)</td><td>0x0b</td><td><strong>SUBLANG_SPANISH_ARGENTINA</strong></td></tr>
+<tr><td>0x400A</td><td></td><td></td><td></td><td>Bolivia (BO)</td><td>0x10</td><td><strong>SUBLANG_SPANISH_BOLIVIA</strong></td></tr>
+<tr><td>0x340A</td><td></td><td></td><td></td><td>Chile (CL)</td><td>0x0D</td><td><strong>SUBLANG_SPANISH_CHILE</strong></td></tr>
+<tr><td>0x240A</td><td></td><td></td><td></td><td>Colombia (CO)</td><td>0x09</td><td><strong>SUBLANG_SPANISH_COLOMBIA</strong></td></tr>
+<tr><td>0x140A</td><td></td><td></td><td></td><td>Costa Rica (CR)</td><td>0x05</td><td><strong>SUBLANG_SPANISH_COSTA_RICA</strong></td></tr>
+<tr><td>0x1C0A</td><td></td><td></td><td></td><td>Dominican Republic (DO)</td><td>0x07</td><td><strong>SUBLANG_SPANISH_DOMINICAN_REPUBLIC</strong></td></tr>
+<tr><td>0x300A</td><td></td><td></td><td></td><td>Ecuador (EC)</td><td>0x0C</td><td><strong>SUBLANG_SPANISH_ECUADOR</strong></td></tr>
+<tr><td>0x440A</td><td></td><td></td><td></td><td>El Salvador (SV)</td><td>0x11</td><td><strong>SUBLANG_SPANISH_EL_SALVADOR</strong></td></tr>
+<tr><td>0x100A</td><td></td><td></td><td></td><td>Guatemala (GT)</td><td>0x04</td><td><strong>SUBLANG_SPANISH_GUATEMALA</strong></td></tr>
+<tr><td>0x480A</td><td></td><td></td><td></td><td>Honduras (HN)</td><td>0x12</td><td><strong>SUBLANG_SPANISH_HONDURAS</strong></td></tr>
+<tr><td>0x080A</td><td></td><td></td><td></td><td>Mexico (MX)</td><td>0x02</td><td><strong>SUBLANG_SPANISH_MEXICAN</strong></td></tr>
+<tr><td>0x4C0A</td><td></td><td></td><td></td><td>Nicaragua (NI)</td><td>0x13</td><td><strong>SUBLANG_SPANISH_NICARAGUA</strong></td></tr>
+<tr><td>0x180A</td><td></td><td></td><td></td><td>Panama (PA)</td><td>0x06</td><td><strong>SUBLANG_SPANISH_PANAMA</strong></td></tr>
+<tr><td>0x3C0A</td><td></td><td></td><td></td><td>Paraguay (PY)</td><td>0x0F</td><td><strong>SUBLANG_SPANISH_PARAGUAY</strong></td></tr>
+<tr><td>0x280A</td><td></td><td></td><td></td><td>Peru (PE)</td><td>0x0A</td><td><strong>SUBLANG_SPANISH_PERU</strong></td></tr>
+<tr><td>0x500A</td><td></td><td></td><td></td><td>Puerto Rico (PR)</td><td>0x14</td><td><strong>SUBLANG_SPANISH_PUERTO_RICO</strong></td></tr>
+<tr><td>0x0C0A</td><td></td><td></td><td></td><td>Spain, Modern Sort (ES)</td><td>0x03</td><td><strong>SUBLANG_SPANISH_MODERN</strong></td></tr>
+<tr><td>0x040A</td><td></td><td></td><td></td><td>Spain, Traditional Sort (ES)</td><td>0x01</td><td><strong>SUBLANG_SPANISH</strong></td></tr>
+<tr><td>0x540A</td><td></td><td></td><td></td><td>United States (US)</td><td>0x15</td><td><strong>SUBLANG_SPANISH_US</strong></td></tr>
+<tr><td>0x380A</td><td></td><td></td><td></td><td>Uruguay (UY)</td><td>0x0E</td><td><strong>SUBLANG_SPANISH_URUGUAY</strong></td></tr>
+<tr><td>0x200A</td><td></td><td></td><td></td><td>Venezuela (VE)</td><td>0x08</td><td><strong>SUBLANG_SPANISH_VENEZUELA</strong></td></tr>
+<tr><td>0x0441</td><td>Swahili (sw)</td><td>0x41</td><td><strong>LANG_SWAHILI</strong></td><td>Kenya (KE)</td><td>0x01</td><td><strong>SUBLANG_SWAHILI</strong></td></tr>
+<tr><td>0x081D</td><td>Swedish (sv)</td><td>0x1D</td><td><strong>LANG_SWEDISH</strong></td><td>Finland (FI)</td><td>0x02</td><td><strong>SUBLANG_SWEDISH_FINLAND</strong></td></tr>
+<tr><td>0x041D</td><td></td><td></td><td></td><td>Sweden (SE); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 8</a></td><td>0x01</td><td><strong>SUBLANG_SWEDISH</strong></td></tr>
+<tr><td>0x041D</td><td></td><td></td><td></td><td>Sweden (SE); <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd318693(v=vs.85).aspx#NotesPrim">see note 8</a></td><td>0x01</td><td><strong>SUBLANG_SWEDISH_SWEDEN</strong></td></tr>
+<tr><td>0x045A</td><td>Syriac (syr)</td><td>0x5A</td><td><strong>LANG_SYRIAC</strong></td><td>Syria (SY)</td><td>0x01</td><td><strong>SUBLANG_SYRIAC</strong></td></tr>
+<tr><td>0x0428</td><td>Tajik (tg)</td><td>0x28</td><td><strong>LANG_TAJIK</strong></td><td>Tajikistan, Cyrillic (TJ)</td><td>0x01</td><td><strong>SUBLANG_TAJIK_TAJIKISTAN</strong></td></tr>
+<tr><td>0x085F</td><td>Tamazight (tzm)</td><td>0x5F</td><td><strong>LANG_TAMAZIGHT</strong></td><td>Algeria, Latin (DZ)</td><td>0x02</td><td><strong>SUBLANG_TAMAZIGHT_ALGERIA_LATIN</strong></td></tr>
+<tr><td>0x0449</td><td>Tamil (ta)</td><td>0x49</td><td><strong>LANG_TAMIL</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_TAMIL_INDIA</strong></td></tr>
+<tr><td>0x0849</td><td></td><td></td><td></td><td>Sri Lanka (LK)</td><td>0x02</td><td><strong>SUBLANG_TAMIL_SRI_LANKA</strong></td></tr>
+<tr><td>0x0444</td><td>Tatar (tt)</td><td>0x44</td><td><strong>LANG_TATAR</strong></td><td>Russia (RU)</td><td>0x01</td><td><strong>SUBLANG_TATAR_RUSSIA</strong></td></tr>
+<tr><td>0x044A</td><td>Telugu (te)</td><td>0x4A</td><td><strong>LANG_TELUGU</strong></td><td>India (IN)</td><td>0x01</td><td><strong>SUBLANG_TELUGU_INDIA</strong></td></tr>
+<tr><td>0x041E</td><td>Thai (th)</td><td>0x1E</td><td><strong>LANG_THAI</strong></td><td>Thailand (TH)</td><td>0x01</td><td><strong>SUBLANG_THAI_THAILAND</strong></td></tr>
+<tr><td>0x0451</td><td>Tibetan (bo)</td><td>0x51</td><td><strong>LANG_TIBETAN</strong></td><td>PRC (CN)</td><td>0x01</td><td><strong>SUBLANG_TIBETAN_PRC</strong></td></tr>
+<tr><td>0x0873</td><td>Tigrinya (ti)</td><td>0x73</td><td><strong>LANG_TIGRINYA</strong></td><td>Eritrea (ER)</td><td>0x02</td><td><strong>SUBLANG_TIGRINYA_ERITREA</strong></td></tr>
+<tr><td>0x0473</td><td></td><td></td><td></td><td>Ethiopia (ET)</td><td>0x01</td><td><strong>SUBLANG_TIGRINYA_ETHIOPIA</strong></td></tr>
+<tr><td>0x0873</td><td>(reserved)</td><td>0x73</td><td><strong>LANG_TIGRIGNA</strong></td><td>(reserved)</td><td>0x02</td><td><strong>SUBLANG_TIGRIGNA_ERITREA</strong></td></tr>
+<tr><td>0x041F</td><td>Turkish (tr)</td><td>0x1F</td><td><strong>LANG_TURKISH</strong></td><td>Turkey (TR)</td><td>0x01</td><td><strong>SUBLANG_TURKISH_TURKEY</strong></td></tr>
+<tr><td>0x0442</td><td>Turkmen (tk)</td><td>0x42</td><td><strong>LANG_TURKMEN</strong></td><td>Turkmenistan (TM)</td><td>0x01</td><td><strong>SUBLANG_TURKMEN_TURKMENISTAN</strong></td></tr>
+<tr><td>0x0422</td><td>Ukrainian (uk)</td><td>0x22</td><td><strong>LANG_UKRAINIAN</strong></td><td>Ukraine (UA)</td><td>0x01</td><td><strong>SUBLANG_UKRAINIAN_UKRAINE</strong></td></tr>
+<tr><td>0x042E</td><td>Upper Sorbian (hsb)</td><td>0x2E</td><td><strong>LANG_UPPER_SORBIAN</strong></td><td>Germany (DE)</td><td>0x01</td><td><strong>SUBLANG_UPPER_SORBIAN_GERMANY</strong></td></tr>
+<tr><td>0x0820</td><td>Urdu (ur)</td><td>0x20</td><td><strong>LANG_URDU</strong></td><td>(reserved)</td><td>0x02</td><td><strong>SUBLANG_URDU_INDIA</strong></td></tr>
+<tr><td>0x0420</td><td></td><td></td><td></td><td>Pakistan (PK)</td><td>0x01</td><td><strong>SUBLANG_URDU_PAKISTAN</strong></td></tr>
+<tr><td>0x0480</td><td>Uyghur (ug)</td><td>0x80</td><td><strong>LANG_UIGHUR</strong></td><td>PRC (CN)</td><td>0x01</td><td><strong>SUBLANG_UIGHUR_PRC</strong></td></tr>
+<tr><td>0x0843</td><td>Uzbek (uz)</td><td>0x43</td><td><strong>LANG_UZBEK</strong></td><td>Uzbekistan, Cyrillic (UZ)</td><td>0x02</td><td><strong>SUBLANG_UZBEK_CYRILLIC</strong></td></tr>
+<tr><td>0x0443</td><td></td><td></td><td></td><td>Uzbekistan, Latin (UZ)</td><td>0x01</td><td><strong>SUBLANG_UZBEK_LATIN</strong></td></tr>
+<tr><td>0x0803</td><td>Valencian (ca)</td><td>0x03</td><td><strong>LANG_VALENCIAN</strong></td><td>Valencia (ES-Valencia)</td><td>0x02</td><td><strong>SUBLANG_VALENCIAN_VALENCIA</strong></td></tr>
+<tr><td>0x042A</td><td>Vietnamese (vi)</td><td>0x2A</td><td><strong>LANG_VIETNAMESE</strong></td><td>Vietnam (VN)</td><td>0x01</td><td><strong>SUBLANG_VIETNAMESE_VIETNAM</strong></td></tr>
+<tr><td>0x0452</td><td>Welsh (cy)</td><td>0x52</td><td><strong>LANG_WELSH</strong></td><td>United Kingdom (GB)</td><td>0x01</td><td><strong>SUBLANG_WELSH_UNITED_KINGDOM</strong></td></tr>
+<tr><td>0x0488</td><td>Wolof (wo)</td><td>0x88</td><td><strong>LANG_WOLOF</strong></td><td>Senegal (SN)</td><td>0x01</td><td><strong>SUBLANG_WOLOF_SENEGAL</strong></td></tr>
+<tr><td>0x0478</td><td>Yi (ii)</td><td>0x78</td><td><strong>LANG_YI</strong></td><td>PRC (CN)</td><td>0x01</td><td><strong>SUBLANG_YI_PRC</strong></td></tr>
+<tr><td>0x046A</td><td>Yoruba (yo)</td><td>0x6A</td><td><strong>LANG_YORUBA</strong></td><td>Nigeria (NG)</td><td>0x01</td><td><strong>SUBLANG_YORUBA_NIGERIA</strong></td></tr>
+</tbody></table>
+<p>&nbsp;</p>
+<h3><a id="NotesPrim"></a><a id="notesprim"></a><a id="NOTESPRIM"></a>Language Identifier Notes</h3>
+<ol>
+<li>To set a neutral language, use <strong>LANG_CHINESE_SIMPLIFIED</strong> or 
+      <strong>LANG_CHINESE_TRADITIONAL</strong> with 
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317768(v=vs.85).aspx"><strong xmlns="http://www.w3.org/1999/xhtml">ConvertDefaultLocale</strong></a>.</li>
+<li>Primary language identifiers for Bosnian, Croatian, and Serbian are numerically identical. For Bosnian, use 
+      <strong>LANG_BOSNIAN</strong> with 
+      <strong>SUBLANG_BOSNIAN_</strong><em>*</em> sublanguage identifiers. For Croatian, use 
+      <strong>LANG_CROATIAN</strong> with 
+      <strong>SUBLANG_CROATIAN_</strong><em>*</em> sublanguage identifiers. For Serbian, use 
+      <strong>LANG_SERBIAN</strong> with 
+      <strong>SUBLANG_SERBIAN_</strong><em>*</em> sublanguage identifiers. To set a neutral 
+      language, use <strong>LANG_BOSNIAN_NEUTRAL</strong>, <strong>LANG_CROATIAN</strong>, or 
+      <strong>LANG_SERBIAN_NEUTRAL</strong> with 
+      <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317768(v=vs.85).aspx"><strong xmlns="http://www.w3.org/1999/xhtml">ConvertDefaultLocale</strong></a>.</li>
+<li><strong>Starting with&nbsp;Windows&nbsp;Vista</strong>: 
+      <strong>SUBLANG_ENGLISH_IRELAND</strong> supersedes <strong>SUBLANG_ENGLISH_EIRE</strong>. The 
+      numerical values of the constants are identical.</li>
+<li>Always use the language identifier constant <strong>LANG_IRISH</strong> with 
+      <strong>SUBLANG_IRISH_IRELAND</strong>.</li>
+<li><strong>Starting with&nbsp;Windows&nbsp;Vista</strong>: 
+      <strong>SUBLANG_LITHUANIAN_LITHUANIA</strong> supersedes <strong>SUBLANG_LITHUANIAN</strong>. 
+      The numerical values of the constants are identical.</li>
+<li>The language identifiers for Farsi and Persian are numerically identical. The constant 
+      <strong>LANG_FARSI</strong> is deprecated. Use <strong>LANG_PERSIAN</strong> instead.</li>
+<li><strong>Starting with&nbsp;Windows&nbsp;Vista</strong>: 
+      <strong>SUBLANG_PORTUGUESE_PORTUGAL</strong> supersedes <strong>SUBLANG_PORTUGUESE</strong>. 
+      The numerical values of the constants are identical.</li>
+<li><strong>Starting with&nbsp;Windows&nbsp;Vista</strong>: 
+      <strong>SUBLANG_SWEDISH_SWEDEN</strong> supersedes <strong>SUBLANG_SWEDISH</strong>. The 
+      numerical values of the constants are identical.</li>
+<li><strong>Starting with&nbsp;Windows&nbsp;8</strong>: The language 
+      identifiers for Yakut and Sakha are numerically identical. The constants <strong>LANG_YAKUT</strong> 
+      and <strong>SUBLANG_YAKUT_RUSSIA</strong> are deprecated. Use <strong>LANG_SAKHA</strong> and 
+      <strong>SUBLANG_SAKHA_RUSSIA</strong> instead.</li>
+<li>The language identifiers for Bengali and Bangla are numerically identical. The constants <strong>LANG_BENGALI</strong>, <strong>SUBLANG_BENGALI_BANGLADESH</strong>, and <strong>SUBLANG_BENGALI_INDIA</strong> are deprecated. Use <strong>LANG_BANGLA</strong>, <strong>SUBLANG_BANGLA_BANGLADESH</strong>, and <strong>SUBLANG_BANGLA_INDIA</strong> instead.</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[Intl\intl]:%20Language%20Identifier%20Constants%20and%20Strings%20%20RELEASE:%20(11/21/2012)&body=%0A%0APRIVACY%20STATEMENT%0A%0AThe%20doc%20team%20uses%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose.%20We'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you%20are%20reporting%20is%20resolved.%20While%20we%20are%20working%20to%20resolve%20this%20issue,%20we%20may%20send%20you%20an%20email%20message%20to%20request%20more%20info%20about%20your%20feedback.%20After%20the%20issue%20is%20addressed,%20we%20may%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+<p>Build date: 11/21/2012</p>
+</div>
+</div>
+
+    
+
+
+
+<script id="CommentTemplate" type="text/x-jquery-tmpl">
+    <div class="communityContentAnnotation">
+        <a name="${Index}"></a>
+        <h3>
+            ${Title}
+        </h3>
+        <div class="communityContentAnnotationBody">
+            {{html Body}}
+        </div>
+        <div class="communityContentAnnotationInfo">
+            <div class="communityContentAnnotationAvatarContainer">
+                <a href="${UserAvatar.Href}" title="${UserAvatar.ToolTip}" class="communityContentAnnotationAvatar"><img src="${UserAvatar.ImageUrl}" alt="${UserAvatar.ImageAltText}" width="34" height="34" /></a>
+            </div>
+            <div class="communityContentAnnotationUserDateContainer">
+                <div class="communityContentAnnotationUserContainer">
+                    <a href="${UserAvatar.Href}">
+                        ${User}
+                    </a>
+                </div>
+                <div class="communityContentAnnotationDateContainer">
+                    <span>${Date}</span>
+                    
+                    {{if EditLink}}
+                        <span>
+                            <a href="${EditLink.Href}" title="${EditLink.ToolTip}" class="communityContentCommentEditLink">${EditLink.Title}</a>
+                        </span>
+                    {{/if}}
+
+                    {{if DeleteLink}}
+                        <span>
+                            <a href="${DeleteLink.Href}" title="${DeleteLink.ToolTip}" class="communityContentDeleteLink">${DeleteLink.Title}</a>
+                        </span>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div class="communityContentContainer">
+    <div id="CommunityContentHeader" class="communityContentHeader">
+        <div class="communityContentHeaderTitleContainer">
+            <h2>Community Additions</h2>
+                <a class="communityContentAddLink" href="http://msdn.microsoft.com/en-us/library/windows/desktop/community/add/dd318693(v=vs.85).aspx">
+                    <span class="communityContentAddButton" title="Add">
+                        ADD
+                    </span>
+                </a>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div id="CommunityComments" data-url="/en-us/library/windows/desktop/community/comments/dd318693(v=vs.85).aspx"><div class="communityContentAnnotation">         <a name="6"></a>         <h3>             Language Pack di Windows Internet Explorer 9 per Windows 7         </h3>         <div class="communityContentAnnotationBody">             1 risultato per "WindowsUpdate_00003712" "WindowsUpdate_dt000"<br><br>1.&nbsp; 1 Risolvere i problemi relativi all'installazione degli aggiornamenti <br>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/sanbor954/" title="" class="communityContentAnnotationAvatar"><img src="./Language Identifier Constants and Strings (Windows)_files/avatar.jpg" alt="" width="34" height="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/sanbor954/">                         sanbor954                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>1/26/2012</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="2"></a>         <h3>             THAI         </h3>         <div class="communityContentAnnotationBody">             I want to update it to thai language.<br><br><b>[tfl - 05 01 12] Hi - and thanks for your post. Community content is not the appropriate place for technical support queries. Instead, <br>you should visit the Technet Forums at http://forums.microsoft.com/technet, where such posts are welcomed and where you stand a much <br>better chance of getting your query resolved. Sorry if that's not the answer you wanted to hear.</b><br>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/" title="" class="communityContentAnnotationAvatar"><img src="./Language Identifier Constants and Strings (Windows)_files/avatar(1).jpg" alt="" width="34" height="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/">                         Thomas Lee                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>1/5/2012</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="4"></a>         <h3>             translate to Japanese language         </h3>         <div class="communityContentAnnotationBody">             0x0411         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/takeshi%20sakai/" title="" class="communityContentAnnotationAvatar"><img src="./Language Identifier Constants and Strings (Windows)_files/avatar(2).jpg" alt="" width="34" height="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/takeshi%20sakai/">                         Takeshi Sakai                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>12/4/2011</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="1"></a>         <h3>             Wrong Local identifier for Chinese Traditional and Simplified         </h3>         <div class="communityContentAnnotationBody">             <p>Chinese Traditional is 0x7C04 and it should be 0x0404, also it uses LANG_CHINESE, and not LANG_CHINESE_TRADITIONAL</p><br><p>Chinese Simplified is 0x0004 and it should be 0x0804</p>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/" title="" class="communityContentAnnotationAvatar"><img src="./Language Identifier Constants and Strings (Windows)_files/avatar(1).jpg" alt="" width="34" height="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/thomas%20lee/">                         Thomas Lee                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>11/1/2011</span>                                                                                 </div>             </div>         </div>     </div><div class="communityContentAnnotation">         <a name="3"></a>         <h3>             Undocumented Serbian (Cyrillic, Serbia) and Serbian (Latin, Serbia)         </h3>         <div class="communityContentAnnotationBody">             <p>Serbian (Cyrillic, Serbia) and Serbian (Latin, Serbia) IDs are undocumented. Available on Win7, not available on Win XP, not sure about Vista.</p><br><p>GetKayboardLayout returns 0x0C1A281A and 0x081A241A. It appears that these values (converted to LPCTSTR) cannot be used as a parameter for LoadKayboardLayout.</p><br><p>Also, note that 0x0C1A and 0x081A are "Serbia and Montenegro, former".</p>         </div>         <div class="communityContentAnnotationInfo">             <div class="communityContentAnnotationAvatarContainer">                 <a href="http://social.msdn.microsoft.com/profile/srdjan%20obucina/" title="" class="communityContentAnnotationAvatar"><img src="./Language Identifier Constants and Strings (Windows)_files/avatar(3).jpg" alt="" width="34" height="34"></a>             </div>             <div class="communityContentAnnotationUserDateContainer">                 <div class="communityContentAnnotationUserContainer">                     <a href="http://social.msdn.microsoft.com/profile/srdjan%20obucina/">                         Srdjan Obucina                     </a>                 </div>                 <div class="communityContentAnnotationDateContainer">                     <span>5/1/2011</span>                                                                                 </div>             </div>         </div>     </div></div>
+</div>
+
+
+
+</div>
+
+
+
+            </div>
+            <div class="clear"></div>
+        
+            
+    
+<input name="__RequestVerificationToken" type="hidden" value="64DAWw50h8CSZGGajvW-GawD9grAmixemCLioZUKdnHpB2xNNogodeaKxmwbXKWoo0nbQazr9zOHUwNUWXR74ZSg-x6H_nmTRodRDDZvqjAkxSxIDvXw223eBeUexxVT0aQd9Q2">
+<input id="ratingSubmitUrl" type="hidden" value="http://msdn.microsoft.com/en-us/library/feedback/add/dd318693(v=vs.85).aspx">
+<input id="isTopicRated" type="hidden" value="false">
+
+
+
+    
+
+
+    <div id="ux-footer" class="FF ltr">
+        
+            <div id="footerSock" style="display: block;">
+                <div id="footerSockInner">
+                    <a name="feedback"></a>
+                    <div data-fragmentname="Survey" id="Fragment_Survey" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="survey">
+    <div class="title">
+        Help us help you
+    </div>
+    <div class="description">
+        Answer questions that we’ll use to make the Dev Center better.
+    </div>
+    <div class="buttons">
+      <button onclick="javascript:window.open(&#39;http://survey2.surveysite.com/wix/p77596864.aspx?site=01&amp;amp;stat=1&#39;, &#39;WindowsSurvey&#39;);">
+            Take the survey
+        </button>
+    </div>
+  </div>
+</div>
+<div class="rating">
+    <div id="ratingSection1">
+        <div class="title">
+            Was this page helpful?
+        </div>
+        <div class="description">
+            Your feedback about this content is important<br>Let us know what you think.
+        </div>
+        <div class="buttons">
+            <button id="ratingYes">Yes</button>
+            <button id="ratingNo">No</button>
+        </div>
+        <input id="ratingValue" type="hidden" value="">
+    </div>
+    <div id="ratingSection2">
+        <div class="title">
+            Additional feedback?
+        </div>
+        <textarea id="ratingText" rows="6" cols=""></textarea>
+        <div class="buttons">
+            <button id="ratingSubmit">Submit</button>
+            <button id="ratingSkipThis">Skip this</button>
+        </div>
+    </div>
+    <div id="ratingSection3">
+        <div class="title">
+            Thank you!
+        </div>
+        <div class="description">
+            We appreciate your feedback.
+        </div>
+    </div>
+    
+    
+    <div id="contentFeedbackQAContainer" style="display: none;"></div>
+</div>
+
+
+                    <div data-fragmentname="SockLinks" id="Fragment_SockLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://www.facebook.com/MicrosoftDeveloper" xmlns="http://www.w3.org/1999/xhtml">Find us on Facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/windevs" xmlns="http://www.w3.org/1999/xhtml">Follow us on Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        <div id="footerContainer">
+                <div id="fourColumnFooter">
+                    <div data-fragmentname="CenterLinks" id="Fragment_CenterLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="LinkListTitle">Centers</div>
+    <div class="Links">
+      <ul class="LinkColumn" style="width: 100%">
+        <li>
+          <a href="http://msdn.microsoft.com/windows" xmlns="http://www.w3.org/1999/xhtml">Dev Center Home</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/windows/apps" xmlns="http://www.w3.org/1999/xhtml">Windows Store apps</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/ie" xmlns="http://www.w3.org/1999/xhtml">Internet Explorer</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/windows/desktop" xmlns="http://www.w3.org/1999/xhtml">Desktop</a>
+        </li>
+        <li>
+          <a href="http://msdn.microsoft.com/windows/hardware" xmlns="http://www.w3.org/1999/xhtml">Hardware</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>              
+                            <div class="TocNavigation">
+                <div class="tocRow">
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Related developer sites</li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285622" title="Microsoft Connect">Microsoft Connect</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285623" title=".NET Framework">.NET Framework</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=282089" title="Visual Studio">Visual Studio</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280293" title="Windows Phone">Windows Phone</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=282087" title="Windows Server">Windows Server</a></li>
+                        </ul>
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Downloads</li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285625" title="Windows 8 SDK">Windows 8 SDK</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285626" title="More downloads">More downloads</a></li>
+                        </ul>
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Stay connected</li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280304" title="Events">Events</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280305" title="Windows Store for developers blog">Windows Store for developers blog</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280306" title="Windows 8 app developer blog">Windows 8 app developer blog</a></li>
+                        </ul>
+                </div>
+                <div class="Clear"></div>
+                <div class="tocRow">
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Other Windows sites</li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280294" title="Enterprise">Enterprise</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280295" title="Small business">Small business</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280296" title="Students">Students</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=280297" title="Home users">Home users</a></li>
+                        </ul>
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Essentials </li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285627" title="Windows 8 APIs">Windows 8 APIs</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285628" title="Samples">Samples</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285629" title="Compatibility and Certification">Compatibility and Certification</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285630" title="Desktop dashboard">Desktop dashboard</a></li>
+                        </ul>
+                        <ul class="links">
+                            
+                                <li class="linksTitle">Support</li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285632" title="Forums">Forums</a></li>
+                                        <li><a href="http://go.microsoft.com/fwlink/p/?linkid=285633" title="More support options">More support options</a></li>
+                        </ul>
+                </div>
+                <div class="Clear"></div>
+        </div>        
+
+                </div>
+            <div id="baseFooterLogos">
+                <span class="microsoftlogo" title="Microsoft"></span>
+                <a href="http://msdn.microsoft.com/en-us" class="msdnlogo" title="MSDN"></a>
+            </div>
+        
+            <div id="baseFooter">
+                <div id="FooterCopyright">© 2013 Microsoft</div>
+      
+                <div data-fragmentname="HelloText" id="Fragment_HelloText" xmlns="http://www.w3.org/1999/xhtml">Hello from Seattle.
+</div>  
+                
+<a title="Change your language" id="SelectLocale" href="http://msdn.microsoft.com/en-us/windows/desktop/SelectLocale?fromPage=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fwindows%2fdesktop%2fdd318693(v%3dvs.85).aspx"><span class="text">United States (English)</span><span class="gear"></span></a>
+        
+            
+            
+                <div data-fragmentname="FooterLinks" id="Fragment_FooterLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="LinkList">
+    <div class="Links">
+      <ul class="LinkColumn horizontal">
+        <li>
+          <a href="http://msdn.microsoft.com/windows/apps/cc300389" xmlns="http://www.w3.org/1999/xhtml">Terms of Use</a>
+        </li>
+        <li>
+          <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" xmlns="http://www.w3.org/1999/xhtml">Trademarks</a>
+        </li>
+        <li>
+          <a href="http://www.microsoft.com/info/privacy.mspx" xmlns="http://www.w3.org/1999/xhtml">Privacy and Cookies</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+                  
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div> 
+
+
+            <div class="footerPrintView">
+                <div class="footerCopyrightPrintView">© 2013 Microsoft. All rights reserved.</div>
+            </div>
+
+            
+            
+    
+
+
+        
+            <input id="MtpsDevice" type="hidden" value="Default">
+
+
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+        
+            
+            
+            
+            
+            
+        
+
+
+
+
+
+<noscript>&lt;div&gt;&lt;img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;amp;WT.js=No" /&gt;&lt;/div&gt;</noscript>
+
+
+
+
+
+
+
+
+
+<noscript>
+  &lt;a href="http://www.omniture.com" title="Web Analytics"&gt;
+    &lt;img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" /&gt;
+  &lt;/a&gt;
+</noscript>
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="zU779b263IcTJJYbt8aAtWOMtNZhEyYM50AulvOaevzK-v4LjoMzQGzDVmyIb3GnQm3fTuBiuoyUT2KQL-w3MyXrn3FBYJCD6dk5qY_qSJ8Q1W_8sIyu1azMysJMEJ7JDVDV5g2">
+</div>
+
+
+        </div>
+    <script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index],elem=document.createElement("script"),elem.className="mtps-injected",elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext,script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }"),parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"http://i.msdn.microsoft.com\", \r\n\t\"js\": \"http://i2.msdn.microsoft.com\", \r\n\t\"css\": \"http://i3.msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/en-us/library/windows/desktop/dd318693(d=default,l=en-us,v=vs.85).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027en-us\u0027;\n  var wtsp = \u0027_msdn_\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"24b108fb-cc42-4768-8225-581eea43afcc\";\n/**/" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Utilities,0:Topic,1:webtrendsscript,2:omni_rsid_MSDN,3:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Global/Content/Webtrends/resources:1,/Areas/Global/Content/Omniture/resources/MSDN:2,/Areas/Epx/Themes/Base/Content:3\u0026amp;hashKey=5982499A7F75BAC5491807268AEC2A90" },
+	{ url: "http://i3.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=MSDN\u0026loc=en-us\u0026Refinement=181\u0026focusOnInit=false\u0026iroot=windows%2fdesktop\u0026emptyWatermark=true\u0026searchButtonTooltip=Search" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:Header,1:Toc,1:NavigationResize,2:FeedbackCounter;/Areas/Epx/Themes/Windows/Content:0,/Areas/Epx/Library/Content:1,/Areas/Epx/Shared/Content:2\u0026amp;hashKey=57D8FD6B6B80BB446ABBD98C06B284E9" },
+	{ url: "http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" },
+	{ url: "http://i2.msdn.microsoft.com/Combined.js?resources=0:CommunityContent,1:Toc_Fixed,2:Rating,0:CodeSnippet,0:TopicNotInScope,0:CollapsibleArea,0:VersionSelector,0:SurveyBroker;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Library/Content:1,/Areas/Epx/Themes/Windows/Content:2\u0026amp;hashKey=37A00976DB73BFDD79B5CD36C968F26D" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script>
+<script src="./Language Identifier Constants and Strings (Windows)_files/broker-config.js"></script><div style="display: none;" id="_WEDCSInsertedData"><iframe id="_msnFrame" src="./Language Identifier Constants and Strings (Windows)_files/c.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;" onload="javascript:MscomBeacon();"></iframe></div></body></html>

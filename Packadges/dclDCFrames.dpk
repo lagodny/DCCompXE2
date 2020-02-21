@@ -1,0 +1,50 @@
+package dclDCFrames;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'DC Frame Comp Library'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  designIDE,
+  DC,
+  tb2k_d12,
+  SpTBXLib_d16,
+  TeeLanguage8XE2,
+  TeePro8XE2,
+  TeeUI8XE2,
+  dclDC,
+  vcltouch;
+
+contains
+  OPCFrameReg in '..\Frames\OPCFrameReg.pas',
+  udnTankFrame in '..\Frames\Danone\udnTankFrame.pas' {dnTankFrame: TFrame},
+  uChartFrame in '..\Frames\uChartFrame.pas' {ChartFrame: TFrame},
+  ukzCompressorDetail in '..\Frames\Danone\ukzCompressorDetail.pas',
+  ukzCompressorShort in '..\Frames\Danone\ukzCompressorShort.pas';
+
+end.

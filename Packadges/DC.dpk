@@ -1,0 +1,91 @@
+package DC;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'DC Runtime Library'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  IndySystem160,
+  IndyCore160,
+  IndyProtocols160,
+  Tee8XE2,
+  Jcl,
+  ControlsCepEx,
+  JvCore,
+  JclDeveloperTools,
+  JclContainers;
+
+contains
+  aDCCommandHandler in '..\Source\aDCCommandHandler.pas',
+  aDCIntercept in '..\Source\aDCIntercept.pas',
+  aOPCTCPSource in '..\Source\aOPCTCPSource.pas',
+  aCustomOPCTCPSource in '..\Source\aCustomOPCTCPSource.pas',
+  aCustomOPCSource in '..\Source\aCustomOPCSource.pas',
+  aOPCSource in '..\Source\aOPCSource.pas',
+  uDCObjects in '..\Common\uDCObjects.pas',
+  uOPCTCPConnection in '..\Source\uOPCTCPConnection.pas',
+  aOPCTCPSource_V30 in '..\Source\aOPCTCPSource_V30.pas',
+  aOPCConsts in '..\Source\aOPCConsts.pas',
+  uOPCCash in '..\Common\uOPCCash.pas',
+  aOPCLog in '..\Source\aOPCLog.pas',
+  uAppStorage in '..\Common\uAppStorage.pas',
+  aOPCAuthorization in '..\Source\aOPCAuthorization.pas',
+  aOPCTCPSource_V32 in '..\Source\aOPCTCPSource_V32.pas',
+  aOPCTCPSource_V31 in '..\Source\aOPCTCPSource_V31.pas',
+  uDCLang in '..\Source\uDCLang.pas',
+  aOPCChart in '..\Source\aOPCChart.pas',
+  aOPCLineSeries in '..\Source\aOPCLineSeries.pas',
+  aOPCLabel in '..\Source\aOPCLabel.pas',
+  aOPCImage in '..\Source\aOPCImage.pas',
+  aOPCImageList in '..\Source\aOPCImageList.pas',
+  aOPCImage2In in '..\Source\aOPCImage2In.pas',
+  aOPCImage3In in '..\Source\aOPCImage3In.pas',
+  aOPCImage4In in '..\Source\aOPCImage4In.pas',
+  aOPCImage5In in '..\Source\aOPCImage5In.pas',
+  uDCLocalizer in '..\Source\uDCLocalizer.pas',
+  aOPCCinema in '..\Source\aOPCCinema.pas',
+  aOPCProvider in '..\Source\aOPCProvider.pas',
+  aOPCLookupList in '..\Source\aOPCLookupList.pas',
+  aOPCConnectionList in '..\Source\aOPCConnectionList.pas',
+  aOPCShape in '..\Source\aOPCShape.pas',
+  uOPCFrame in '..\Frames\uOPCFrame.pas' {aOPCFrame: TFrame},
+  aOPCGauge in '..\Source\aOPCGauge.pas',
+  aOPCProgressBar in '..\Source\aOPCProgressBar.pas',
+  aOPCListBox in '..\Source\aOPCListBox.pas',
+  aOPCVerUpdater in '..\Source\aOPCVerUpdater.pas',
+  uCustomProjectData in '..\Common\uCustomProjectData.pas',
+  uCustomSettings in '..\Common\uCustomSettings.pas',
+  aOPCStateLine in '..\Source\aOPCStateLine.pas',
+  aOPCTCPSource_V33 in '..\Source\aOPCTCPSource_V33.pas',
+  uSCSTypes in '..\Source\uSCSTypes.pas';
+
+end.
+
+

@@ -1,0 +1,104 @@
+{*******************************************************}
+{                                                       }
+{     Copyright (c) 2001-2011 by Alex A. Lagodny        }
+{                                                       }
+{*******************************************************}
+
+package OPC2007;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Компоненты визуализации OPC'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  designide,
+  Tee711,
+  indy,
+  rtl,
+  vcljpg,
+  DCPdelphi2007R;
+
+contains
+  aOPCImageList in 'aOPCImageList.pas',
+  aOPCClass in 'aOPCClass.pas',
+  aOPCConsts in 'aOPCConsts.pas',
+  aCustomOPCSource in 'aCustomOPCSource.pas',
+  aOPCAuthorization in 'aOPCAuthorization.pas',
+  aOPCDataObject in 'aOPCDataObject.pas',
+  aOPCFlowTransmitter in 'aOPCFlowTransmitter.pas',
+  aOPCGauge in 'aOPCGauge.pas',
+  aOPCImage in 'aOPCImage.pas',
+  aOPCLabel in 'aOPCLabel.pas',
+  aOPCLineSeries in 'aOPCLineSeries.pas',
+  aOPCLookupList in 'aOPCLookupList.pas',
+  aOPCLookupListEdit in 'aOPCLookupListEdit.pas',
+  aOPCPipe in 'aOPCPipe.pas',
+  aOPCProgressBar in 'aOPCProgressBar.pas',
+  aOPCProvider in 'aOPCProvider.pas',
+  aOPCPump in 'aOPCPump.pas',
+  aOPCSource in 'aOPCSource.pas',
+  aOPCSwitch in 'aOPCSwitch.pas',
+  aOPCTCPSource in 'aOPCTCPSource.pas',
+  aOPCValve in 'aOPCValve.pas',
+  Password in 'Password.pas' {UserChoice},
+  aOPCCinema in 'aOPCCinema.pas',
+  uCinemaControl in 'uCinemaControl.pas' {aOPCCinemaControl: TFrame},
+  uCinemaProperty in 'uCinemaProperty.pas' {CinemaPropertyForm},
+  uCinemaFillHistoryProgress in 'uCinemaFillHistoryProgress.pas' {FillHistoryProgress},
+  aOPCGifImage in 'aOPCGifImage.pas',
+  uCinemaControlForm in 'uCinemaControlForm.pas' {CinemaControlForm},
+  aOPCUtils in 'aOPCUtils.pas',
+  aOPCListBox in 'aOPCListBox.pas',
+  uOPCFrame in '..\Frames\uOPCFrame.pas' {aOPCFrame: TFrame},
+  aOPCImage2In in 'aOPCImage2In.pas',
+  uDateTimeInput in 'uDateTimeInput.pas' {fDateTimeInput},
+  uChangePassword in 'uChangePassword.pas' {fChangePassword},
+  aOPCChart in 'aOPCChart.pas',
+  aOPCConnectionList in 'aOPCConnectionList.pas',
+  aOPCLog in 'aOPCLog.pas',
+  aOPCShape in 'aOPCShape.pas',
+  aOPCTagDictionary in 'aOPCTagDictionary.pas',
+  SizeControl in 'SizeControl.pas',
+  aOPCCollection in 'aOPCCollection.pas',
+  uCommonClass in 'uCommonClass.pas',
+  aOPCStateLine in 'aOPCStateLine.pas',
+  aOPCImage3In in 'aOPCImage3In.pas',
+  aOPCImage4In in 'aOPCImage4In.pas',
+  aOPCImage5In in 'aOPCImage5In.pas',
+  uUserMessage in 'uUserMessage.pas',
+  uOPCTCPConnection in 'uOPCTCPConnection.pas',
+  uUserMessageForm in 'uUserMessageForm.pas' {UserMessageForm},
+  uOPCSetValueFrame in 'uOPCSetValueFrame.pas' {Frame1: TFrame},
+  uOPCSetValueForm in 'uOPCSetValueForm.pas' {SetValueForm},
+  aOPCCommandHandler in 'aOPCCommandHandler.pas',
+  uStrFunc in 'uStrFunc.pas',
+  aOPCTCPSource_V30 in 'aOPCTCPSource_V30.pas',
+  aCustomOPCTCPSource in 'aCustomOPCTCPSource.pas';
+
+end.
