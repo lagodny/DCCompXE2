@@ -302,7 +302,7 @@ begin
     for i := 0 to aClassType.RecordProps.Fields.Count - 1 do
     begin
       P := aClassType.RecordProps.Fields.List[i];
-      if (P.SQLFieldType in [
+      if (P.SQLFieldTypeStored in [
           {sftRecord,} {sftTID, }sftBlob, sftBlobDynArray, sftBlobCustom, sftUTF8Custom,
           sftModTime, sftCreateTime, sftMany]) then
         Continue;
@@ -314,7 +314,9 @@ begin
       //if aField.Value = aField.OldValue then
       //  Continue;
 
-      case P.SQLFieldType of
+      //case P.SQLFieldType of
+      case P.SQLFieldTypeStored of
+
         sftDateTime, sftDateTimeMS:
         begin
           P.SetValue(aRecord, pointer(DateTimeToIso8601Text(aField.AsDateTime, 'T', true)), true);
@@ -382,7 +384,7 @@ begin
         end
 
         else
-          raise Exception.CreateFmt('Cannot perform type %s', [GetCaptionFromEnum(TypeInfo(TSQLFieldType), Ord(P.SQLFieldType))]);
+          raise Exception.CreateFmt('Cannot perform type %s', [GetCaptionFromEnum(TypeInfo(TSQLFieldType), Ord(P.SQLFieldTypeStored))]);
 
       end;
     end;

@@ -1,4 +1,4 @@
-unit uCustomDocList;
+unit cxCustomDocList;
 
 interface
 
@@ -56,10 +56,11 @@ implementation
 
 uses
   uFormsManager, uBaseFormInterface,
-  uTimeUtils,
+//  uTimeUtils,
   uResources,
-  uSettings, uCommonData,
-  uViewDataInterface;
+  uSettings;
+//  uCommonData,
+//  uViewDataInterface;
 
 {$R *.dfm}
 
@@ -158,11 +159,32 @@ begin
     s := GetSQL;
     // получаем данные с сервера
     Resp := Settings.Client.ViewData.SelectSQL(s);
+    //aTable := Settings.Client.ExecuteList(RecordClass, s);
+
     // открываем, если закрыта
     if not DataSet.Active then
       DataSet.CreateDataSet;
 
     DataSet.LogChanges := False;
+
+//    if aMode in [cdsReplace, cdsAppend] then
+//    begin
+//      // обновляем данные - сохраняем позицию
+//      b := DataSet.Bookmark;
+//      ToClientDataSet(DataSet, aTable, Settings.Client, aMode);
+//      try
+//        DataSet.Bookmark := b;
+//      except
+//        on e: EDatabaseError do
+//          DataSet.First;
+//      end;
+//    end
+//    else
+//    begin
+//      // заполняем новыми данными
+//      ToClientDataSet(DataSet, aTable, Settings.Client, cdsReplace);
+//      DataSource.DataSet := DataSet;
+//    end;
 
     if aMode in [cdsReplace, cdsAppend] then
     begin

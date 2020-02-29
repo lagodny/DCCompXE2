@@ -41,6 +41,7 @@ type
     procedure CopyValues;
     procedure PasteValues;
 
+    procedure InitRights; override;
     procedure InitCustomProps; override;
 
     procedure PostRecord; override;
@@ -93,6 +94,30 @@ begin
 
   SelectSql := GetCSVDataSetFields(DataSet);
   UpdateSql := GetCSVDataSetFields(DataSet, True);
+end;
+
+procedure TcxCustomListFrame.InitRights;
+var
+  aRights: TSQLOccasions;
+begin
+  inherited;
+
+  if (Settings.Client <> nil) and (Length(FRecordClass) > 0) then
+  begin
+    aRights := Settings.Client.GetTableRights(DefRecClass);
+
+    DataSet.ReadOnly := not (soUpdate in aRights);
+
+//    ListNavigator.Buttons.Insert.Enabled := soInsert in aRights;
+//    ListNavigator.Buttons.Append.Enabled := soInsert in aRights;
+//    ListNavigator.Buttons.Delete.Enabled := soDelete in aRights;
+//    ListNavigator.Buttons.Edit.Enabled := soUpdate in aRights;
+
+    ListView.OptionsData.Inserting := ListView.OptionsData.Inserting and (soInsert in aRights);
+    ListView.OptionsData.Appending := ListView.OptionsData.Appending and (soInsert in aRights);
+    ListView.OptionsData.Editing := ListView.OptionsData.Editing and (soUpdate in aRights);
+    ListView.OptionsData.Deleting := ListView.OptionsData.Deleting and (soDelete in aRights);
+  end;
 end;
 
 procedure TcxCustomListFrame.ListViewCellDblClick(Sender: TcxCustomGridTableView; ACellViewInfo: TcxGridTableDataCellViewInfo;
@@ -187,10 +212,10 @@ procedure TcxCustomListFrame.PopupMenuPopup(Sender: TObject);
 begin
   miEditInline.Checked := EditInLine;
 
-  fr_miPaste.Enabled := Clipboard.HasFormat(CF_TEXT);
+  fr_miPaste.Enabled := Clipboard.HasFormat(CF_TEXT) and not DataSet.ReadOnly;
   fr_miCopy.Enabled := ListView.Controller.SelectedRowCount > 0;
   fr_miCopyValues.Enabled := fr_miCopy.Enabled;
-  fr_miClone.Enabled := fr_miCopy.Enabled;
+  fr_miClone.Enabled := fr_miCopy.Enabled and not DataSet.ReadOnly;
 
   fr_miHistory.Visible := Settings.Client.Model.GetTableIndex(Settings.Client.GetHistoryClass) > -1;
 end;

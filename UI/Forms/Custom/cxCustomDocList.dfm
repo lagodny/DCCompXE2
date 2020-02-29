@@ -1,13 +1,14 @@
 inherited CustomDocList: TCustomDocList
   Caption = 'CustomDocList'
-  ClientWidth = 1071
-  ExplicitWidth = 1087
-  ExplicitHeight = 240
+  ClientWidth = 819
+  ExplicitWidth = 835
   PixelsPerInch = 96
   TextHeight = 13
   inherited ListGrid: TcxGrid
-    Width = 1071
+    Width = 819
+    ExplicitTop = 29
     ExplicitWidth = 1071
+    ExplicitHeight = 327
     inherited ListView: TcxGridDBTableView
       Navigator.Visible = False
     end
@@ -47,7 +48,7 @@ inherited CustomDocList: TCustomDocList
       Caption = 'Filter'
       CaptionButtons = <>
       DockedDockingStyle = dsTop
-      DockedLeft = 265
+      DockedLeft = 266
       DockedTop = 0
       DockingStyle = dsTop
       FloatLeft = 1160

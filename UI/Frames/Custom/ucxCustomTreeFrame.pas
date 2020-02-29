@@ -36,6 +36,8 @@ type
   public
     constructor Create(AOwner: TComponent); override;
   protected
+    procedure InitRights; override;
+
     function IsRoot: Boolean;
     procedure PostRecord; override;
     procedure FocusRecord; override;
@@ -115,6 +117,24 @@ begin
   end;
 end;
 
+procedure TcxCustomTreeFrame.InitRights;
+var
+  aRights: TSQLOccasions;
+begin
+  inherited;
+
+  if (Settings.Client <> nil) and (Length(FRecordClass) > 0) then
+  begin
+    aRights := Settings.Client.GetTableRights(DefRecClass);
+
+    DataSet.ReadOnly := not (soUpdate in aRights);
+
+    tlStructure.OptionsData.Inserting := tlStructure.OptionsData.Inserting and (soInsert in aRights);
+    tlStructure.OptionsData.Editing := tlStructure.OptionsData.Editing and (soUpdate in aRights);
+    tlStructure.OptionsData.Deleting := tlStructure.OptionsData.Deleting and (soDelete in aRights);
+  end;
+end;
+
 function TcxCustomTreeFrame.IsRoot: Boolean;
 begin
   Result := False;
@@ -129,6 +149,7 @@ end;
 procedure TcxCustomTreeFrame.PopupMenuPopup(Sender: TObject);
 begin
   fr_TL_miEditInline.Checked := EditInLine;
+  fr_TL_miPaste.Enabled := not DataSet.ReadOnly;
 end;
 
 procedure TcxCustomTreeFrame.PostRecord;

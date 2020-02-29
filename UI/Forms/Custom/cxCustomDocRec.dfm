@@ -8,10 +8,6 @@ inherited cxCustomDocRec: TcxCustomDocRec
   TextHeight = 13
   inherited dxBarManager1: TdxBarManager
     Style = bmsEnhanced
-    DockControlHeights = (
-      0
-      0
-      32
-      0)
+    PixelsPerInch = 96
   end
 end

@@ -302,7 +302,7 @@ begin
     for i := 0 to Fields.Count-1 do begin
       aHint := GetNextItemString(PHint,'|'); // ALL fields are listed: do it now
       P := Fields.List[i];
-      if ((P.SQLFieldType in [ // must match "case SQLFieldType of" below
+      if ((P.SQLFieldTypeStored in [ // must match "case SQLFieldType of" below
         // Alex -- {sftTID, }
           sftRecord, {sftTID, }sftBlob, sftBlobDynArray, sftBlobCustom, sftUTF8Custom,
         //
@@ -336,7 +336,7 @@ begin
       if C=nil then begin
         // default creation from RTTI, if not handled by OnComponentCreate()
         P.GetValueVar(aRecord,false,aValue,nil);
-        aFieldType := Fields.List[i].SQLFieldType;
+        aFieldType := Fields.List[i].SQLFieldTypeStored;
         case aFieldType of
           sftDateTime, sftDateTimeMS: begin
             CD := TDateTimePicker.Create(Scroll);
@@ -666,7 +666,7 @@ begin
     end else
     if C.InheritsFrom(TComboBox) then begin
       SetIndex := CB.ItemIndex;
-      case P.SQLFieldType of
+      case P.SQLFieldTypeStored of
         sftEnumerate:
           if SetIndex>=0 then begin
             P.SetValue(Rec,pointer(Int32ToUTF8(SetIndex)),false);
@@ -688,7 +688,7 @@ begin
       if (fFieldComponentsTwin<>nil) and
          fFieldComponentsTwin[FieldIndex].InheritsFrom(TDateTimePicker) then
           D := D+frac(TDateTimePicker(fFieldComponentsTwin[FieldIndex]).Time);
-      case P.SQLFieldType of
+      case P.SQLFieldTypeStored of
         sftDateTime, sftDateTimeMS:
           P.SetValue(Rec,pointer(DateTimeToIso8601Text(D,'T',true)),true);
         sftTimeLog, sftModTime: begin

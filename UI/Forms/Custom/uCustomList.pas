@@ -340,13 +340,13 @@ begin
 
   InitCustomProps;
 
-  if (Client <> nil) and (Length(FRecordClass) > 0) then
+  if (Settings.Client <> nil) and (Length(FRecordClass) > 0) then
   begin
-    DataSet.ReadOnly := not Client.GetTableRight(FRecordClass[0], soUpdate);
+    DataSet.ReadOnly := not Settings.Client.GetTableRight(FRecordClass[0], soUpdate);
 
-    aNew.Enabled := Client.GetTableRight(FRecordClass[0], soInsert);
-    aEdit.Enabled := Client.GetTableRight(FRecordClass[0], soUpdate);
-    aDelete.Enabled := Client.GetTableRight(FRecordClass[0], soDelete);
+    aNew.Enabled := Settings.Client.GetTableRight(FRecordClass[0], soInsert);
+    aEdit.Enabled := Settings.Client.GetTableRight(FRecordClass[0], soUpdate);
+    aDelete.Enabled := Settings.Client.GetTableRight(FRecordClass[0], soDelete);
 
     ListNavigator.Buttons.Insert.Enabled := aNew.Enabled;
     ListNavigator.Buttons.Append.Enabled := aNew.Enabled;
@@ -649,7 +649,7 @@ begin
     for i := 0 to aClassType.RecordProps.Fields.Count - 1 do
     begin
       P := aClassType.RecordProps.Fields.List[i];
-      if (P.SQLFieldType in [
+      if (P.SQLFieldTypeStored in [
           sftRecord, {sftTID, }sftBlob, sftBlobDynArray, sftBlobCustom, sftUTF8Custom,
           sftModTime, sftCreateTime, sftMany]) then
         Continue;
@@ -658,7 +658,7 @@ begin
       if not Assigned(aField) then
         Continue;
 
-      case P.SQLFieldType of
+      case P.SQLFieldTypeStored of
         sftDateTime, sftDateTimeMS:
         begin
           P.SetValue(aRecord, pointer(DateTimeToIso8601Text(aField.AsDateTime, 'T', true)), true);
@@ -711,7 +711,7 @@ begin
         end
 
         else
-          raise Exception.CreateFmt('Cannot perform type %s', [GetCaptionFromEnum(TypeInfo(TSQLFieldType), Ord(P.SQLFieldType))]);
+          raise Exception.CreateFmt('Cannot perform type %s', [GetCaptionFromEnum(TypeInfo(TSQLFieldType), Ord(P.SQLFieldTypeStored))]);
 
       end;
     end;

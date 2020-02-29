@@ -12,6 +12,7 @@ type
   protected
     procedure InitCustomProps; virtual;
     procedure InitLookups; virtual;
+    procedure InitRights; virtual;
 
     procedure ReadModel(aID: Integer); virtual;
     function WriteModel: Integer; virtual;
@@ -41,6 +42,7 @@ constructor TBaseFrame.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
   InitCustomProps;
+  InitRights;
 end;
 
 function TBaseFrame.GetFormGUID: string;
@@ -74,6 +76,11 @@ begin
 end;
 
 procedure TBaseFrame.InitLookups;
+begin
+
+end;
+
+procedure TBaseFrame.InitRights;
 begin
 
 end;
