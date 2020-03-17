@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uCustomListFrame, cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxStyles,
   cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, Data.DB, cxDBData, cxGridCustomPopupMenu, cxGridPopupMenu,
   Datasnap.DBClient, cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
-  cxNavigator, cxLabel, dxSkinsCore, dxSkinscxPCPainter;
+  cxNavigator, cxLabel, dxSkinsCore, dxSkinscxPCPainter, dxDateRanges, dxBarBuiltInMenu;
 
 type
   TCustomRefListFrame = class(TCustomListFrame)

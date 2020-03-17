@@ -9,7 +9,7 @@ uses
   JvComponentBase, JvFormPlacement, cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView, cxGridTableView,
   cxGridDBTableView, cxGrid, cxGridCustomPopupMenu, cxGridPopupMenu, cxNavigator, TB2Dock, SpTBXItem, cxDBNavigator, TB2Item,
   TB2Toolbar, dxBarExtItems, dxBar, dxSkinsCore, dxSkinscxPCPainter, dxSkinsdxBarPainter,
-  cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu;
+  cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu, dxDateRanges;
 
 type
   TCustomRefList = class(TCustomList)

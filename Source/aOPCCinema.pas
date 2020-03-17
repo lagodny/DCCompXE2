@@ -10,8 +10,11 @@ type
   TCrackOPCLink = class(TaOPCDataLink);
   TCrackOPCSource = class(TaOPCSource);
 
-  TFillHistoryEvent = procedure(var StopFill: boolean; Progress: integer) of
-    object;
+  TFillHistoryEvent = procedure(var StopFill: boolean; Progress: integer) of object;
+
+//  TActivateEvent = procedure(Sender: TObject; const aDate1, aDate2: TDateTime) of object;
+//  TDeactivateEvent = procedure(Sender: TObject) of object;
+
 
   TValueSnapshot = record
     FDateTime: TDateTime;
@@ -82,6 +85,7 @@ type
     FOnRequest: TNotifyEvent;
     FSpeed: integer;
     FShowUserMessages: Boolean;
+    FBeforeActivate: TNotifyEvent;
     procedure TimeTimer(Sender: TObject);
     //    procedure SetOPCSource(const Value: TaOPCSource);
     procedure SetDate1(const Value: TDateTime);
@@ -135,12 +139,13 @@ type
 
     property Playing: boolean read GetPlaying write SetPlaing;
   published
-    property OnChangeMoment: TNotifyEvent
-      read FOnChangeMoment write FOnChangeMoment;
-    property OnFillHistory: TFillHistoryEvent
-      read FOnFillHistory write FOnFillHistory;
-    property OnRequest: TNotifyEvent read FOnRequest
-      write FOnRequest; // случается, когда прошел цикл опроса датчиков
+    property OnChangeMoment: TNotifyEvent read FOnChangeMoment write FOnChangeMoment;
+    property OnFillHistory: TFillHistoryEvent read FOnFillHistory write FOnFillHistory;
+
+    // случается, когда прошел цикл опроса датчиков
+    property OnRequest: TNotifyEvent read FOnRequest write FOnRequest;
+    // случается перед загрузкой
+    property BeforeActivate: TNotifyEvent read FBeforeActivate write FBeforeActivate;
 
     //    property OPCSource:TaOPCSource read FOPCSource write SetOPCSource;
     property Date1: TDateTime read FDate1 write SetDate1 stored false;
@@ -855,6 +860,9 @@ end;
 
 procedure TaOPCCinema.DoActive;
 begin
+  if Assigned(FBeforeActivate) then
+    BeforeActivate(Self);
+
   FActive := FillHistory(Date1, Date2);
   if fActive then
   begin

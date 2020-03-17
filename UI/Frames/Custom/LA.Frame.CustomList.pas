@@ -1,4 +1,4 @@
-unit ucxCustomListFrame;
+unit LA.Frame.CustomList;
 
 interface
 
@@ -9,7 +9,7 @@ uses
   cxNavigator, cxDBData, cxGridCustomPopupMenu, cxGridPopupMenu, cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView,
   cxGridTableView, cxGridDBTableView, cxGrid, cxDataControllerConditionalFormattingRulesManagerDialog,
   dxBarBuiltInMenu, Vcl.Menus,
-  Vcl.Clipbrd, dxDateRanges;
+  Vcl.Clipbrd, LA.Frame.CustomData, dxDateRanges;
 
 type
   TcxCustomListFrame = class(TcxCustomDataFrame)

@@ -19,10 +19,11 @@ uses
   cxDBNavigator, dxBarExtItems, dxBar, dxSkinsCore, dxSkinscxPCPainter, dxSkinsdxBarPainter,
   cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu
 
-  , uClientIntf
+  , uClientIntf, dxDateRanges
   ;
 
 resourcestring
+  sNoRecord = 'No record';
   sNoRecordToEdit = 'No record to edit';
   sNoIDField = 'No ID field';
   sIDFieldIsNull = 'ID field is NULL';
@@ -180,7 +181,7 @@ uses
   uAppStorage,
   uFormsManager,
   uSettings,
-  ucxCustomDataFrame,
+  //ucxCustomDataFrame,
   ucxGridProc, uDataProc, uDelta;
 
 

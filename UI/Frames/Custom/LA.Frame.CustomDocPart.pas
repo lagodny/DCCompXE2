@@ -1,4 +1,4 @@
-unit ucxCustomDocPartFrame;
+unit LA.Frame.CustomDocPart;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   cxStyles, cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator,
   cxDataControllerConditionalFormattingRulesManagerDialog, Data.DB, cxDBData, dxBarBuiltInMenu, Vcl.Menus, cxGridCustomPopupMenu,
   cxGridPopupMenu, Datasnap.DBClient, cxGridLevel, cxClasses, cxGridCustomView, cxGridCustomTableView, cxGridTableView,
-  cxGridDBTableView, cxGrid, dxDateRanges;
+  cxGridDBTableView, cxGrid;
 
 type
   // 1. добавляет DocID, по которому производится отбор

@@ -9,7 +9,7 @@ uses
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid, cxGridCustomPopupMenu, cxGridPopupMenu, Datasnap.DBClient,
   uCustomRec,
   SynCommons, mORMot, mORMotMidasVCL, UIEdit, cxNavigator, dxSkinsCore, dxSkinscxPCPainter,
-  cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu;
+  cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu, dxDateRanges;
 
 type
   TCustomRecordClassArray =  array of TSQLRecordClass;

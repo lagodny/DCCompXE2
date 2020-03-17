@@ -37,6 +37,7 @@ inherited cxCustomTreeFrame: TcxCustomTreeFrame
     OptionsBehavior.AutoDragCopy = True
     OptionsBehavior.IncSearch = True
     OptionsCustomizing.ColumnsQuickCustomization = True
+    OptionsData.Appending = True
     OptionsData.Inserting = True
     OptionsSelection.InvertSelect = False
     OptionsSelection.MultiSelect = True

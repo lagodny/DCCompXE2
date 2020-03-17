@@ -10,13 +10,15 @@ inherited CustomList: TCustomList
   TextHeight = 13
   object ListGrid: TcxGrid [0]
     Left = 0
-    Top = 31
+    Top = 29
     Width = 900
-    Height = 325
+    Height = 327
     Align = alClient
     PopupMenu = PopupMenu
     TabOrder = 0
     LookAndFeel.NativeStyle = False
+    ExplicitTop = 31
+    ExplicitHeight = 325
     object ListView: TcxGridDBTableView
       OnKeyDown = ListViewKeyDown
       Navigator.Buttons.CustomButtons = <>
@@ -247,7 +249,7 @@ inherited CustomList: TCustomList
     DockControlHeights = (
       0
       0
-      31
+      29
       0)
     object dxBarNavigator: TdxBar
       AllowQuickCustomizing = False

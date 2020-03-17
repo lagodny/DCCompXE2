@@ -16,7 +16,8 @@ uses
   uCustomList,
   uAppStorage, uCustomRec, uBaseForm,
   uOPCInterval, uOPCIntervalForm, cxGridCustomPopupMenu, cxGridPopupMenu, cxNavigator, cxDBNavigator, dxBar, dxBarExtItems,
-  dxSkinsCore, dxSkinscxPCPainter, dxSkinsdxBarPainter, cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu;
+  dxSkinsCore, dxSkinscxPCPainter, dxSkinsdxBarPainter, cxDataControllerConditionalFormattingRulesManagerDialog, dxBarBuiltInMenu,
+  dxDateRanges;
 
 type
 
