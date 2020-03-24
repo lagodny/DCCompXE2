@@ -231,6 +231,9 @@ begin
 
   if not EnableTime then
     Result := Trunc(Result);
+
+  if Result < 1 then
+    Result := 1;
 end;
 
 function TOPCInterval.GetDate2: TDatetime;
@@ -292,6 +295,9 @@ begin
 
     Result := Result;
   end;
+
+  if Result < 1 then
+    Result := 1;
 end;
 
 class function TOPCInterval.GetLastInterval: TOPCInterval;
@@ -430,6 +436,9 @@ begin
     raise EIntervalException.Create(StrDate1MoreDate2Error);
 
   FDate1 := Value;
+  if FDate1 < 1 then
+    FDate1 := 1;
+
   FTimeShift := FDate2 - FDate1;
   FShiftKind := skNone;
 
@@ -460,6 +469,12 @@ end;
 
 procedure TOPCInterval.SetInterval(aDate1, aDate2: TDateTime);
 begin
+  if aDate1 < 1 then
+    aDate1 := 1;
+
+  if aDate2 < 1 then
+    aDate2 := 1;
+
   if aDate1 < aDate2 then
   begin
     FDate1 := aDate1;
@@ -475,6 +490,7 @@ begin
     FDate1 := aDate2;
     FDate2 := aDate1;
   end;
+
 
   FTimeShift := FDate2 - FDate1;
   FShiftKind := skNone;

@@ -190,7 +190,7 @@ type
     FActive: boolean;
     FStreamedActive: boolean;
 
-	FDataLinkGroups: TList;
+	  FDataLinkGroups: TList;
     FDataLinkGroupsLock: TCriticalSection;
 
     procedure SlToFormatSettings(sl: TStringList);

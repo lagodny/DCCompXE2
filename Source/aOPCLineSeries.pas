@@ -612,7 +612,8 @@ begin
       aMoment := aDate1;
       //aValue2 := 0;
       Filter.Evaluator.Cinema.CurrentMoment := aMoment;
-      aValue2 := StrToFloat(Filter.DataLink.Value);
+      //aValue2 := StrToFloat(Filter.DataLink.Value);
+      aValue2 := Filter.DataLink.FloatValue;
       while not Filter.Evaluator.Cinema.Eof do
       begin
         // устанавливаемся на позицию
