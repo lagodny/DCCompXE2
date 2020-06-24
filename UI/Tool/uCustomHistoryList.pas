@@ -10,7 +10,7 @@ uses
   Vcl.Menus, Datasnap.DBClient, JvComponentBase, JvFormPlacement, cxDBNavigator, cxGridLevel, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid,
   SynCommons,
-  uOPCInterval, uOPCIntervalForm;
+  uOPCInterval, uOPCIntervalForm, dxDateRanges;
 
 type
   TCustomHistroyList = class(TCustomList)

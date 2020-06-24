@@ -24,7 +24,7 @@ object fmMnemoShema: TfmMnemoShema
   TextHeight = 13
   object StatusBar: TStatusBar
     Left = 0
-    Top = 270
+    Top = 250
     Width = 715
     Height = 19
     Panels = <
@@ -41,7 +41,6 @@ object fmMnemoShema: TfmMnemoShema
       item
         Width = 50
       end>
-    ExplicitTop = 250
   end
   object aOPCSource: TaOPCTCPSource_V30
     States = llStates
@@ -51,7 +50,6 @@ object fmMnemoShema: TfmMnemoShema
     OnRequest = aOPCSourceRequest
     OnError = aOPCSourceError
     RemoteMachine = 'localhost'
-    PacketUpdate = True
     MainHost = 'localhost'
     Left = 346
     Top = 15
@@ -65,7 +63,7 @@ object fmMnemoShema: TfmMnemoShema
     OnActivate = OPCCinemaActivate
     OnDeactivate = OPCCinemaDeactivate
     OnChangeMoment = OPCCinemaChangeMoment
-    CurrentMoment = 43318.395996481480000000
+    CurrentMoment = 43947.679422175930000000
     Step = 60
     Left = 406
     Top = 15

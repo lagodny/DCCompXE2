@@ -8,6 +8,10 @@ uses
 
 type
   TDevelopInfo = record
+//  private
+//    FCompany: string;
+//    procedure SetCompany(const Value: string);
+//  public
     Title: string;
     ApplicationName: string;
     Version : string;
@@ -54,7 +58,7 @@ var
 
 {$R *.dfm}
 
-procedure ShowAbout;
+procedure ShowAbout(aDevelopInfo: TDevelopInfo; aUser: string);
 begin
   AboutForm := TAboutForm.Create(Application);
   try
