@@ -52,6 +52,7 @@ type
     ok_scs_TrackerTeltonika = 61, // трекер Телтоника
     ok_scs_TrackerAndroid = 62, // трекер Android
     ok_scs_TrackerCicada = 63, // трекер Cicada
+    ok_scs_TrackerBitrek = 64, // трекер Bitrek
 
     okStorageTanks = 100,  // ПК №1 Фрейм "Ёмкости хранения"
 
@@ -259,7 +260,13 @@ type
   end;
 
 const
-   cDC_SCS_Trackers: TDCObjectKindSet = [ok_scs_TrackerTDC, ok_scs_TrackerTeltonika, ok_scs_TrackerAndroid, ok_scs_TrackerCicada];
+   cDC_SCS_Trackers: TDCObjectKindSet = [
+     ok_scs_TrackerTDC,
+     ok_scs_TrackerTeltonika,
+     ok_scs_TrackerAndroid,
+     ok_scs_TrackerCicada,
+     ok_scs_TrackerBitrek
+   ];
 
 
 //function CompareByID(const Item1, Item2: TDCObject): Integer;
