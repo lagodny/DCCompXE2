@@ -16,7 +16,7 @@ type
     trtGlobalSat,
     trtAndroid,
     trtCicada,
-    trtBitrek
+    trtWialonIPS
   );
 
   TSID = packed record
@@ -107,7 +107,7 @@ end;
 function TAddTrackerParamsDTO.GetPass: string;
 begin
   case TrackerType of
-    trtUndefined, trtTeltonika, trtRoadKey, trtGlobalSat, trtCicada, trtBitrek:
+    trtUndefined, trtTeltonika, trtRoadKey, trtGlobalSat, trtCicada, trtWialonIPS:
       Result := '';
     trtTDC:
       Result := '7';

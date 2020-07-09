@@ -52,7 +52,7 @@ type
     ok_scs_TrackerTeltonika = 61, // трекер Телтоника
     ok_scs_TrackerAndroid = 62, // трекер Android
     ok_scs_TrackerCicada = 63, // трекер Cicada
-    ok_scs_TrackerBitrek = 64, // трекер Bitrek
+    ok_scs_TrackerWialonIPS = 64, // трекер с протоколом WialonIPS
 
     okStorageTanks = 100,  // ПК №1 Фрейм "Ёмкости хранения"
 
@@ -265,7 +265,7 @@ const
      ok_scs_TrackerTeltonika,
      ok_scs_TrackerAndroid,
      ok_scs_TrackerCicada,
-     ok_scs_TrackerBitrek
+     ok_scs_TrackerWialonIPS
    ];
 
 

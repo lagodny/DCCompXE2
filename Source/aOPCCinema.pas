@@ -824,33 +824,39 @@ begin
     if aDataLinkGroupHistory.IsEmpty then
       Continue;
 
-    aShapshort := aDataLinkGroupHistory.GetSnapshotOnDate(CurrentMoment);
-    aDataLinkGroupHistory.Value := FloatToStr(aShapshort.FValue);
-    aDataLinkGroupHistory.FloatValue := aShapshort.FValue;
-    aDataLinkGroupHistory.ErrorCode := Trunc(aShapshort.FState);
-    //aDataLinkGroupHistory.ErrorString := ;
-//      FloatToStr(aDataLinkGroupHistory.GetValueOnDate(CurrentMoment));
-    for j := 0 to aDataLinkGroupHistory.DataLinks.Count - 1 do
-    begin
-      CrackDataLink := TCrackOPCLink(aDataLinkGroupHistory.DataLinks.Items[j]);
-      if (CrackDataLink.fValue <> aDataLinkGroupHistory.Value) or
-         (CrackDataLink.ErrorCode <> aDataLinkGroupHistory.ErrorCode)then
+    try
+      aShapshort := aDataLinkGroupHistory.GetSnapshotOnDate(CurrentMoment);
+      aDataLinkGroupHistory.Value := FloatToStr(aShapshort.FValue);
+      aDataLinkGroupHistory.FloatValue := aShapshort.FValue;
+      aDataLinkGroupHistory.ErrorCode := Trunc(aShapshort.FState);
+      //aDataLinkGroupHistory.ErrorString := ;
+  //      FloatToStr(aDataLinkGroupHistory.GetValueOnDate(CurrentMoment));
+      for j := 0 to aDataLinkGroupHistory.DataLinks.Count - 1 do
       begin
-        CrackDataLink.FMoment := aDataLinkGroupHistory.Moment;
-        CrackDataLink.FOldValue := CrackDataLink.FValue;
-        CrackDataLink.FValue := aDataLinkGroupHistory.Value;
-        CrackDataLink.FFloatValue := aDataLinkGroupHistory.FloatValue;
-        CrackDataLink.FErrorCode := aDataLinkGroupHistory.ErrorCode;
-        if (CrackDataLink.FErrorCode <> 0) and
-          Assigned(CrackDataLink.RealSource) and
-          Assigned(CrackDataLink.RealSource.States) then
-          CrackDataLink.ErrorString := CrackDataLink.RealSource.States.Items.Values[IntToStr(CrackDataLink.FErrorCode)]
-        else
-          CrackDataLink.ErrorString := '';
+        CrackDataLink := TCrackOPCLink(aDataLinkGroupHistory.DataLinks.Items[j]);
+        if (CrackDataLink.fValue <> aDataLinkGroupHistory.Value) or
+           (CrackDataLink.ErrorCode <> aDataLinkGroupHistory.ErrorCode)then
+        begin
+          CrackDataLink.FMoment := aDataLinkGroupHistory.Moment;
+          CrackDataLink.FOldValue := CrackDataLink.FValue;
+          CrackDataLink.FValue := aDataLinkGroupHistory.Value;
+          CrackDataLink.FFloatValue := aDataLinkGroupHistory.FloatValue;
+          CrackDataLink.FErrorCode := aDataLinkGroupHistory.ErrorCode;
+          if (CrackDataLink.FErrorCode <> 0) and
+            Assigned(CrackDataLink.RealSource) and
+            Assigned(CrackDataLink.RealSource.States) then
+            CrackDataLink.ErrorString := CrackDataLink.RealSource.States.Items.Values[IntToStr(CrackDataLink.FErrorCode)]
+          else
+            CrackDataLink.ErrorString := '';
 
-        CrackDataLink.DoChangeDataThreaded;
-        CrackDataLink.ChangeData;
+          CrackDataLink.DoChangeDataThreaded;
+          CrackDataLink.ChangeData;
+        end;
       end;
+    except
+      on e: Exception do
+        OPCLog.WriteToLogFmt('TaOPCCinema.CalcValuesOnMoment: Moment=%s, id=%s : e=%s',
+         [DateTimeToStr(aMoment), aDataLinkGroupHistory.PhysID, e.Message]);
     end;
   end;
 
